@@ -2,3 +2,6 @@
 /.Rproj.user
 /.venv
 /nuevo_blog.Rproj
+*.Rdata
+*.Rds
+/.quarto/
