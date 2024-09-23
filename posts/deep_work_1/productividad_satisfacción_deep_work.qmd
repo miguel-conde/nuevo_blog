@@ -1,0 +1,17 @@
+---
+title: "Productividad y satisfacción laboral en la Economía del Conocimiento"
+author: "Miguel Conde"
+date: "2024-09-23"
+categories: [data, management, deep work]
+image: "image.jpg"
+---
+
+El 28 de junio de este año Nike presentó sus resultados financieros del 2º trimestre. Ese mismo día, sus acciones en bolsa cayeron un 20%: perdieron $25000$ millones de dólares en un solo día.
+
+Con eso acumulaban en 9 meses la friolera de $70000$ millones de dólares perdidos y conseguían el dudoso honor de alcanzar el mínimo en bolsa desde 2018, $-32$% desde principio de año.
+
+En Nike lo llaman "El Día del Juicio".
+
+¿Qué había pasado?
+
+# Una Empresa *data driven*
