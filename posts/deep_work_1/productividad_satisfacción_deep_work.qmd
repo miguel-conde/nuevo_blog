@@ -15,3 +15,49 @@ En Nike lo llaman "El Día del Juicio".
 ¿Qué había pasado?
 
 # Una Empresa *data driven*
+
+Desde enero de 2020 Nike tenía un nuevo equipo directivo que diseñó tres grandes líneas estratégicas:
+
+1.  Sustituir las **categorías** por **géneros** . Las categorías eran divisiones específicas de productos deportivos, como *running*, baloncesto, fútbol o *fitness*, cada una con producto, estrategias de marketing, innovación, desarrollo de productos y ventas centradas en cada deporte o segmento. Las divisiones basadas en géneros (hombre, mujer, niño) son las típicas en empresas retail de moda, como Zara o H&M.
+
+2.  Convertirse en una empresa de **venta directa** al consumidor, eliminando intermediarios como distribuidores o minoristas. Esto significaba romper miles de acuerdos y potenciar su propia plataforma de venta online, hasta entonces el canal de ventas secundario.
+
+Con estas dos medidas se perseguía claramente una **reducción de costes**, simplificando procesos, centralizando stocks y eliminando comisiones.
+
+Para implementaralas Nike debía apoyarse en la tercera medida:
+
+3.  Convertirse en una **empresa *data driven***:
+
+    -   Cambiar a un modelo de **marketing digital**. El modelo anterior de marketing de Nike se centraba en la creación de demanda a través de la **marca**, los productos y el liderazgo en el mercado. Invertían fuertemente en **marketing deportivo**, **narrativas** **inspiradoras** y **campañas creativas** que destacaban la sinergia entre atletas y productos. Este enfoque estaba orientado a la innovación, la inspiración y la conexión emocional con los consumidores. El objetivo era hacer crecer la marca mediante la inspiración de más personas para practicar deporte, manteniendo a los atletas como el núcleo de sus campañas.
+
+    -   Utilizar los datos para **optimizar procesos** (por ejemplo, la **gestión de stocks**). Nike utilizaba un enfoque más tradicional basado en previsiones históricas y relaciones con intermediarios para la gestión de su inventario. Los minoristas hacían pedidos con antelación basados en estimaciones de ventas futuras, lo que se conocía como el sistema de "futuros". Esto permitía a Nike planificar su producción y distribución a largo plazo, pero no respondía tan rápidamente a cambios inmediatos en la demanda o preferencias del consumidor. El **conocimiento experto** de los empleados de Nike jugaba un papel crucial en el modelo anterior, ya que estos profesionales tenían un entendimiento profundo de cada categoría deportiva.
+
+Parece una estrategia correcta ¿verdad? Pero condujo a una catástrofe. ¿Dónde está el error?
+
+# El caballo de troya
+
+Deshacerse de los procesos y el marketing tradicionales tiene una ventaja: no necesitas el conocimiento experto de cientos de directivos intermedios que los gestionaban de una manera, digamos, más "arte" que "ciencia". Puedes sustituir este conocimiento experto por lo que te dicen los datos y los modelos. Mucho más objetivo. Mucho más eficiente. Mucho más "científico".
+
+Pero esta ventaja es, en realidad, un caballo de troya. Al ser todo digital, tienes acceso a los datos. Pero estos datos **no son los de tu negocio del futuro**. Son los de tu negocio del **pasado**.
+
+-   Un pasado en el que tus clientes compraban tus productos en tiendas y centros comerciales. Y resulta que quieres usar estos datos con clientes que, en teoría, comprarán tus productos online.
+
+-   Un pasado en el que tus clientes reconocían tu marca y tenían una conexión emocional con ella. Pero ahora quieres usar esos datos con clientes a los que tus mensajes les llegarán a través de "fríos" ads online.
+
+Efectivamente, Nike perdió muchos de sus antiguos clientes. Estos iban a una tienda, no encontraban productos Nike y, en vez de ir a Nike.com a comprarlos, compraban los de la competencia que *si* estaban en la tienda y aprovechaban para ocupar el hueco dejado por Nike.
+
+Si, Nike obtuvo nuevos clientes *online*. Pero de estos nuevos clientes no tenía datos. Y lo que es peor: tampoco de sus clientes *potenciales*.
+
+De modo que ni los modelos de marketing digital ni los de gestión de inventario funcionaron nunca bien.
+
+Estos modelos, por muy sofisticados que sean, no saben *extrapolar*. Solo *interpolan*.
+
+# ¿Cuál es la moraleja?
+
+Hay formas más baratas de hacer las cosas, si. Pero puede que no sean las más eficaces.
+
+Nike invirtió grandes sumas de dinero en marketing digital y programático porque era más fácil de medir, aunque no necesariamente más efectivo. La empresa priorizó lo que podía medirse fácilmente en lugar de enfocarse en aquello que producía mejores resultados a largo plazo, como las campañas de marca más creativas y emocionalmente conectadas con los consumidores o las relaciones sólidas y mutuamente beneficiosas con distribuidores. Esto condujo a un desperdicio de recursos y a una pérdida de la esencia de su estrategia de marca.
+
+Pero, un momento. ¿No se atribuye a Peter Drucker la frase "If you can’t measure it, you can’t manage it."? Y, si lo dijo Drucker...
+
+En una empresa, todo lo relevante al negocio y su gestión ¿se ***puede*** medir? ¿se ***sabe*** medir? ¿se ***quiere*** medir? ¿se ***debe*** medir? ¿***merece la pena*** medirlo?
