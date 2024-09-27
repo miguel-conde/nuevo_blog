@@ -14,7 +14,7 @@ En Nike lo llaman "El Día del Juicio".
 
 ¿Qué había pasado?
 
-# Una Empresa *data driven*
+# Nike: historia de una Empresa que quiso ser *data driven*
 
 Desde enero de 2020 Nike tenía un nuevo equipo directivo que diseñó tres grandes líneas estratégicas:
 
@@ -34,7 +34,7 @@ Para implementaralas Nike debía apoyarse en la tercera medida:
 
 Parece una estrategia correcta ¿verdad? Pero condujo a una catástrofe. ¿Dónde está el error?
 
-# El caballo de troya
+## El caballo de troya
 
 Deshacerse de los procesos y el marketing tradicionales tiene una ventaja: no necesitas el conocimiento experto de cientos de directivos intermedios que los gestionaban de una manera, digamos, más "arte" que "ciencia". Puedes sustituir este conocimiento experto por lo que te dicen los datos y los modelos. Mucho más objetivo. Mucho más eficiente. Mucho más "científico".
 
@@ -52,7 +52,7 @@ De modo que ni los modelos de marketing digital ni los de gestión de inventario
 
 Estos modelos, por muy sofisticados que sean, no saben *extrapolar*. Solo *interpolan*.
 
-# ¿Cuál es la moraleja?
+## ¿Cuál es la moraleja?
 
 Hay formas más baratas de hacer las cosas, si. Pero puede que no sean las más eficaces.
 
@@ -73,8 +73,99 @@ Este libro si que trata de, entre otras cosas, productividad y satisfacción lab
 El caso es que leyendo y releyendo respectivamente ambos, se "cruzaron" algunas ideas de los dos.
 
 El epicentro del cruce era la moraleja que nos ha enseñado "El Día del Juicio" de Nike: puede que lo más
-eficiente no sea implementar lo que es más fácil de medir. Y eso plantea reflexiones sobre la gestión de la productividad
-y la satisfacción personal y laboral, especialmente en los trabajos intensivos en conocimiento, que cada vez son más. Y lo hace desde el ámbito individual hasta el organizacional.
+eficiente no coincida con lo que es más fácil de medir. 
+
+Y eso plantea reflexiones sobre la gestión de la productividad y la satisfacción personal y laboral, especialmente en los trabajos intensivos en conocimiento, que cada vez son más. Y lo hace desde el ámbito individual hasta el organizacional.
+
+Por un lado, en los trabajos especializados, intensivos en conocimiento, las claves de la 
+productividad son las habilidades de:
+
+1. **Dominar rápido** cosas **difíciles**: **aprendizaje**.
+2. **Producir rápido** y con **calidad**: **excelencia**.
+
+Las personas con estas dos características:
+
++ Trabajan de forma eficiente con **máquinas "inteligentes"** y en **sistemas complejos** que evolucionan rápidamente..
++ **Destacan** en lo que hacen.
+
+La clave es reconocer que, para este tipo de trabajos, especializados e intensivos en conocimiento y en los que es clave aprender ágilmente y producir rápido y con calidad, la forma más productiva y satisfactoria de abordarlos es lo que denominaremos **trabajo a fondo** (***Deep Work***): periodos de trabajo sin distracciones, con **alta concentración** en la tarea.
+
+Por otro lado, las tendencias culturales actuales, especialmente en los ámbitos laborales, favorecen hábitos de trabajo como:
+
++ La aceptación acrítica como "bueno" de todo lo relacionado con la **tecnología**: redes sociales, herramientas de trabajo colaborativo, email y mensajería instantánea, redes sociales, web, inteligencia artificial, etc.
++ La tendencia a la **interacción inmediata**: espacios y puertas abiertas, reuniones, llamadas, mensajes, notificaciones, etc.
++ La percepción de la **multitarea** como virtud.
+
+Son estos hábitos los que me recuerdan a los problemas de Nike: en nuestras empresas medimos muchos KPIs, pero no
+los relacionados con el impacto de estas prácticas en la productividad y la satisfacción laboral. Quizá, como Nike, estamos midiendo lo que es más fácil de medir, pero no lo que es más efectivo.
+
+De modo que ¿cuánto impacto *real* tienen estas prácticas en la productividad y la satisfacción laboral?
+
+Desde luego, no es fácil medirlo. Por ejemplo, ¿cómo medirías la mejora de la productividad y la satisfacción laboral que produce el uso intensivo del email en las organizaciones del conocimiento? ¿Y el de la mensajería instantánea? ¿Y las reuniones? ¿Y la multitarea? No, no es fácil. Y si lo intentáramos, probablemente descubririamos que el coste y el engorro que supone harían que no mereciera la pena.
+
+Pero nos hemos entregado de pleno a la práctica de estas actividades sin cuestionarlas.
+
+En otras palabras:
+
+En una empresa hay múltiples actividades y tareas. Simplificando mucho:
+
++ En algunas podemos medir su productividad, es decir, la relación entre los recursos invertidos y los resultados obtenidos. Por ejemplo: el tiempo vendido de servicios profesionales.
+
++ Hay otras en que el coste es más o menos fácil de medir, pero no el resultado. Por ejemplo,
+la formación, los sistemas de mensajería instantánea, el email, las reuniones, etc.
+
++ En otras el coste es difícil de medir y el resultado también. Por ejemplo, las reuniones, 
+la política de puertas abiertas, la cultura de la multitarea. Pero también el trabajo a fondo.
+
+La pregunta es: **¿por qué, si la productividad tanto de las tendencias contrarias 
+al trabajo profundo como la del mismo trabajo a fondo son difíciles de medir, nos hemos 
+entregado a las primeras y hemos olvidado las segundas?**
+
+Sostengo que, antes incluso de intentar medir, es necesario **entender** y **reflexionar** sobre estas prácticas y sus consecuencias. Y, a partir de ahí, **decidir** si merece la pena medirlas y, en su caso, cómo hacerlo.
+
+Es decir, hay un aspecto de la **gestión** (en este caso de la productividad y la satisfacción laboral) que es **cualitativo** y **subjetivo**. Un *arte* que no puede ser ni olvidado ni invalidado por la *ciencia* de la medición.
+
+Porque ya tenemos evidencias de que la **dispersión de la atención** que estas prácticas generan, la **forma superficial** de trabajar que promueven y la **falta de tiempo** para la reflexión y la profundización en el trabajo, pueden estar minando la **productividad** y la **satisfacción** laboral de las personas y, por ende, de las organizaciones.
+
+Por el contrario, la evidencia señala que el **trabajo a fondo** (***Deep Work***) las promueve.
+
+A continuación trataré de mostrar por qué esto es así.
+
+# Trabajo a fondo: ¿qué es?
+
+PONER EJEMPLOS AQUÍ
+
+Esta forma de trabajo se caracteriza, como digo, por actividades en estado de **alta concentración** y **sin distracciones**. En estas circunstancias las capacidades cognitivas llegan a su máximo. Se crea valor, se mejoran las habilidades y no es fácil de replicar.
+
+## Valioso
+
+## Escaso
+
+## Con sentido
+
+# Contrapunto: trabajo superficial
+
+# La situación actual. ¿Por qué trabajamos así?
+
+## Difícil de medir
+
+En una empresa hay múltiples actividades y tareas. Simplificando mucho:
+
++ En algunas podemos medir su productividad, es decir, la relación entre los recursos invertidos y los resultados obtenidos. Por ejemplo: el tiempo vendido de servicios profesionales.
+
++ Hay otras en que el coste es más o menos fácil de medir, pero no el resultado. Por ejemplo,
+la formación, los sistemas de mensajería instantánea, el email, las reuniones, etc.
+
++ En otras el coste es difícil de medir y el resultado también. Por ejemplo, las reuniones, 
+la política de puertas abiertas, la cultura de la multitarea. Pero también el trabajo a fondo.
+
+La pregunta es ¿por qué, si la productividad tanto de las tendencias contrarias 
+al trabajo profundo como el trabajo a fondo son difíciles de medir, nos hemos 
+entregado a las primeras y hemos olvidado las segundas? 
+
+
+# Conclusiones
+
 
 
 
