@@ -1,16 +1,19 @@
 ---
-title: "El incendio de la pradera"
+title: "Historia de dos culturas: estadística tradicional frente a la revolución algorítmica"
+subtitle: "De cómo un estadístico desafió el status quo de los modelos clásicos y anticipó el auge del machine learning, el deep learning y la IA generativa, en un debate que sigue vigente hoy."
 author: "Miguel Conde"
-date: "2024-09-18"
+date: "2024-10-06"
 categories: [statistics, machine learning]
 image: "image.jpg"
 ---
 
-En agosto de 2001 Leo Breiman incendió la pradera en la que las tribus de estadísticos plantaban tranquilamente sus tipees y se dedicaban desde hacía décadas a la caza del bisonte econométrico o clínico, con sus arcos de modelo lineal o logísitco, y al pacífico cultivo de las hipótesis nulas.
+# Un pirómano en la bucólica pradera
+
+En agosto de 2001 Leo Breiman incendió la pradera en la que las tribus de estadísticos plantaban tranquilamente sus tipees y se dedicaban desde hacía décadas al pacífico cultivo de las hipótesis nulas y a la caza del bisonte econométrico o clínico, con sus arcos de modelo lineal o logístico.
 
 Un incendio. Un terremoto. Un tsunami.
 
-Pero ¿quién era Leo? Paradójicamente, Leo era uno de ellos. Al comienzo de su carrera había pasado 7 años como profesor e investigador en teoría de la probabilidad y estadística matemática. Pero entonces renunció a su vida académica y se convirtió en consultor independiente a tiempo completo. La experiencia lo transformó. Él no se dio cuenta de su cambio hasta que, tras 13 años, volvió al mundo académico en 1980. Y lo hizo nada menos que en en el Departamento de Estadística de la Univesidad de California, Berkeley.
+Pero ¿quién era Leo? Paradójicamente, Leo era uno de ellos. Al comienzo de su carrera había pasado 7 años como profesor e investigador en teoría de la probabilidad y estadística matemática. Pero entonces renunció a su vida académica y se convirtió en consultor independiente a tiempo completo. La experiencia lo transformó. Él no se dio cuenta de su cambio hasta que, tras 13 años, volvió al mundo académico en 1980. Y lo hizo nada menos que en en el Departamento de Estadística de la Universidad de California, Berkeley.
 
 Allí tuvo que volver a sumergirse en la lectura de publicaciones de investigación estadística, como [*Annals of Statistics*](https://imstat.org/journals-and-publications/annals-of-statistics/) o [*Statistical Science*](https://imstat.org/journals-and-publications/statistical-science/). Se dio cuenta de que "la investigación distaba mucho de lo que había estado haciendo como consultor. Todos los artículos comienzan y terminan con *modelos de datos*".
 
@@ -20,13 +23,13 @@ Como consultor había tenido que enfrentarse a múltiples problemas en los que l
 
 Así que empezó a jugar con árboles. Eureka. La alternativa a los *modelos de datos* eran los *modelos algorítmicos*.
 
-Y aquí volvemos al incendio, al terremoto y al tsunami: decidió compartir su "Eureka" con toda la tribu y lo hizo en una de las prestigiosas revistas profesionales que tanto le habían dado que pensar. Publicó "[Statistical Modeling: The Two Cultures](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full?tab=ArticleLink)".
+Y aquí volvemos al incendio, al terremoto y al tsunami: decidió compartir su "Eureka" con toda la tribu y lo hizo en una de las prestigiosas revistas profesionales que tanto le habían dado que pensar. Publicó [*Statistical Modeling: The Two Cultures*](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full?tab=ArticleLink).
 
 Lo petó.
 
 En este trabajo, Breiman criticaba duramente la orientación predominante en la estadística hacia el uso exclusivo de modelos probabilísticos y planteaba que la comunidad estaba ignorando una realidad emergente: el poder de los métodos algorítmicos. Según Breiman, estos métodos, como los árboles de decisión, bagging y random forests, ofrecían una capacidad predictiva superior en muchos casos prácticos, pero eran desestimados por la mayoría de los estadísticos debido a su falta de interpretabilidad o su alejamiento de los paradigmas tradicionales.
 
-Breiman argumentaba que había dos culturas en la estadística: una centrada en la inferencia a partir de modelos matemáticos basados en suposiciones probabilísticas (la escuela tradicional) y otra, la cultura algorítmica, enfocada en la precisión predictiva mediante el uso de modelos flexibles capaces de ajustarse a grandes volúmenes de datos sin estar tan limitados por supuestos rígidos. Esta confrontación desencadenó un debate en la comunidad estadística, ya que Breiman no solo cuestionaba el enfoque dominante, sino que también sugería que la estadística, si no adaptaba su metodología, corría el riesgo de volverse irrelevante en la era de los datos masivos y la informática.
+Breiman argumentaba que había **dos culturas** en la estadística: una centrada en la **inferencia** a partir de **modelos matemáticos** basados en suposiciones **probabilísticas** (la escuela **tradicional**) y otra, la cultura **algorítmica**, enfocada en la **precisión predictiva** mediante el uso de modelos flexibles capaces de ajustarse a grandes volúmenes de datos sin estar tan limitados por supuestos rígidos. Esta confrontación desencadenó un debate en la comunidad estadística, ya que Breiman no solo cuestionaba el enfoque dominante, sino que también sugería que la estadística, si no adaptaba su metodología, corría el riesgo de volverse irrelevante en la era de los datos masivos y la informática.
 
 Y lo petó no solo por lo que postulaba en el artículo, sino porque Leo no era un don nadie. Breiman era un peso pesado, un gigante con un historial intachable, reconocido por sus contribuciones fundamentales en la teoría de la probabilidad y el desarrollo de los métodos estadísticos. Antes de convertirse en el "renegado" que abrazó los métodos algorítmicos, ya había dejado su marca como un respetado académico, con trabajos como los árboles de clasificación y regresión (CART), y más tarde con su revolucionario **Random Forest**.
 
@@ -35,3 +38,105 @@ Si, Leo era el inventor de Random Forest, que no solo mejoró el análisis de da
 Esto hacía que su crítica fuera doblemente incendiaria: no se trataba de un outsider lanzando piedras desde fuera, sino de uno de los suyos, un miembro prominente de la misma tribu, quien ahora apuntaba a las mismas bases que habían sostenido décadas de desarrollo estadístico. Y lo hacía con el poder de alguien que había creado una de las herramientas más potentes para la predicción: **Random Forest**, un método que no solo rompía con las estructuras clásicas, sino que las superaba en muchos casos. Así, no era solo lo que decía lo que causó tanto revuelo, sino **quién** lo decía. Breiman no estaba simplemente abriendo un nuevo camino, estaba sugiriendo que la ruta seguida hasta entonces tal vez ya no llevaba a ninguna parte... o peor aún, que los estadísticos podrían estar caminando en círculos, mientras él, con su **Random Forest**, ofrecía una brújula algorítmica para avanzar hacia lo desconocido.
 
 Las respuestas no se hicieron esperar y continúan hasta hoy, con autores como Bradley Efron, David Cox y otros líderes en la estadística frecuentista defendiendo la importancia del modelado basado en teorías sólidas y la atribución causal, mientras reconocían la necesidad de incorporar enfoques más pragmáticos. Este debate continúa siendo relevante, especialmente con el auge del machine learning y la inteligencia artificial.
+
+# ¿Qué dijo Leo?
+
+Antes de nada, Leo diferenció, como hemos dicho, dos culturas de modelado:
+
+-   La **tradicional**, basada en lo que llamó ***Modelos de Datos*** como la regresión lineal, la logística, los modelos de supervivencia como el de Cox, el LDA (Linear Discriminant Analysis), etc. En esta cultura los estadísticos *pre-suponen* un mecanismo de generación de los datos que analizan, lo expresan como modelo matemático, y estiman sus parámetros. Los modelos se validan mediante pruebas de ***goodness of fitness*** (como el típico $R^2$ ) y **análisis de residuos**.
+
+-   La (en 2001) **emergente**, basada en ***Modelos Algorítmico*****s**, que consiste en encontrar una *función* o *algoritmo* que, aplicado a las variables de entrada, produzca la variable respuesta. No se presupone nada acerca del modelo matemático; es más ¡no hay modelo matemático! Lo único que importa es la **capacidad predictiva** del modelo. Encontramos aquí (en 2001) los árboles de decisión (CART), Random Forest, redes neuronales, etc. Es decir, lo que hoy conocemos como ***machine learning***.
+
+Nótese que, independientemente de la cultura a la que pertenezca, una vez validado un modelo lo podemos usar tanto para **predecir** como para **extraer** **información** acerca de la relación entre las variables del modelo y la variable respuesta.
+
+Pues bien, en su artículo Leo sostenía "herejías" tales como que los modelos tradicionales :
+
+-   A menudo habían conducido a generar "teoría irrelevante y conclusiones científicas cuestionables".
+
+-   Estaban evitando que los estadísticos "utilizaran los modelos algorítmicos más apropiados".
+
+-   Impedían que los estadísticos "trabajaran en nuevos y emocionantes problemas".
+
+Veamos sus "herejías" con un poco más de detalle.
+
+## Las dos caras de los modelos tradicionales
+
+Leo aceptaba sin dificultad que, a lo largo de la historia de la estadística, los modelos tradicionales habían sido la base para el análisis de datos, permitiendo a los investigadores obtener información valiosa y descubrir patrones. Sin embargo, también señaló que esta confianza en los modelos paramétricos había llevado a un uso excesivo e incluso erróneo de estas herramientas. La idea de que los modelos pueden representar fielmente la realidad había tomado demasiadas veces como un dogma infalible, lo que había provocado conclusiones cuestionables cuando los datos no cumplían los estrictos supuestos sobre los que se basan estos modelos.
+
+Breiman criticaba el enfoque predominante en la comunidad estadística, que insistía en aplicar modelos de datos aun cuando los mecanismos subyacentes de los fenómenos fueran complejos y difícilmente capturables por ecuaciones simples. Esta rigidez había llevado a errores importantes en situaciones donde la realidad era más compleja que las simplificaciones asumidas por los modelos tradicionales.
+
+## Modelos de datos: una jaula de oro
+
+La primera consecuencia de lo anterior era, según Leo, que la dependencia de los modelos paramétricos había encerrado a la estadística en una "jaula de oro". Si bien habían sido útiles en problemas sencillos, su insistente uso en situaciones inapropiadas había limitado el avance de la disciplina. Breiman criticaba cómo esta obsesión con los modelos de datos había impedido a los estadísticos explorar problemas modernos más complejos, en los que los datos no se ajustaban a los supuestos tradicionales.
+
+Con preocupación observaba que muchos de estos nuevos desafíos, como el análisis de datos médicos o financieros, eran abordados ahora por profesionales de otros campos que no estaban atados a las mismas restricciones que los estadísticos tradicionales. En lugar de buscar siempre un modelo paramétrico adecuado, Breiman sugería que debíamos enfocarnos en el problema y los datos, abriendo la puerta a modelos algorítmicos más flexibles que pudieran proporcionar mejores resultados en situaciones donde los métodos tradicionales fallaban.
+
+## Modelos algorítmicos: el reino de los nuevos y jóvenes profesionales
+
+En efecto, reflexionaba Leo, el crecimiento de los **modelos algorítmicos** había sido vertiginoso en las últimas décadas, impulsado por jóvenes profesionales de disciplinas como la informática, la física y la ingeniería, no condicionados por la formación estadística tradicional. Estos investigadores habían encontrado en los modelos algorítmicos, como las redes neuronales y los árboles de decisión, herramientas que superaban a los modelos tradicionales en términos de **exactitud predictiva**.
+
+Breiman criticaba que los estadísticos se hubieran quedado rezagados en este avance, debido a su apego a la interpretabilidad y simplicidad de los modelos paramétricos. Mientras los modelos tradicionales dominaban campos como la regresión logística, estos nuevos enfoques estaban ahora resolviendo problemas complejos de predicción que antes eran dominio de los estadísticos. Breiman no dudaba en advertir que, si la estadística no fuera capaz de adaptarse y abrirse a estos nuevos enfoques, corría el riesgo de perder relevancia en el análisis de datos moderno.
+
+## Cambios importantes
+
+En su crítica Leo señaló tres problemas habituales en problemas de modelado, junto a su incidencia en los modelos de datos tradicionales y los emergente modelos algorítmicos.
+
+### Rashomon: modelos buenos ¿múltiples?
+
+El **efecto Rashomon**[^1] es una de las críticas más incisivas de Breiman hacia los modelos tradicionales. En muchos casos, existen múltiples modelos que ajustan los datos casi igualmente bien, pero cada uno cuenta una historia distinta sobre qué variables son importantes. Este fenómeno es especialmente problemático en la regresión lineal, donde diferentes combinaciones de variables pueden ofrecer resultados similares en términos de error, pero con interpretaciones completamente diferentes.
+
+[^1]: [Rashomon](https://es.wikipedia.org/wiki/Rash%C5%8Dmon_(pel%C3%ADcula)) es una película japonesa en la que cuatro personas son testigos de un crimen. Cuando testifican en el juicio, todos ellos cuentan los mismos hechos pero la historia de cada uno es muy diferente de la de los demás.
+
+Este efecto también aparece en modelos más avanzados, como los árboles de decisión y las redes neuronales. Breiman señalaba que la multiplicidad de modelos es una señal de la inestabilidad inherente de muchos enfoques estadísticos tradicionales, donde pequeños cambios en los datos pueden generar modelos completamente distintos. Para superar este problema, propone técnicas como el "*bagging*", que combinan varios modelos y mejoran la precisión al reducir la variabilidad en las conclusiones. Sin embargo, muchas veces estas alternativas más sofisticadas eran ignoradas en favor de modelos más simples pero menos robustos.
+
+### Occam: sencillez contra exactitud
+
+La **navaja de Occam**[^2], que favorece los modelos más simples, ha sido siempre un principio ampliamente aceptado en estadística. Sin embargo, Breiman desafiaba directamente este enfoque, argumentando que en muchos casos la simplicidad se enfrenta a la precisión predictiva. Modelos simples como la regresión lineal o los árboles de decisión son interpretables, pero su exactitud a menudo es inferior a la de modelos más complejos, como los **bosques aleatorios**.
+
+[^2]: También conocido como [Principio de Parsimonia](https://es.wikipedia.org/wiki/Navaja_de_Ockham).
+
+Breiman criticaba que muchos estadísticos seguían priorizando la simplicidad y la interpretabilidad sobre la precisión, en parte porque los modelos complejos eran considerados "cajas negras" difíciles de entender. Sin embargo, para Breiman, el enfoque correcto es **primero** lograr la **mejor predicción posible** y **luego** intentar **comprender** cómo funciona el modelo, aunque sea más difícil de interpretar. En un contexto donde la precisión predictiva es crítica, como en la medicina o las finanzas, optar por modelos más complejos puede ser la única manera de obtener resultados confiables.
+
+### Bellman: la ¿maldición? de la dimensionalidad
+
+El concepto de la **maldición de la dimensionalidad**[^3] ha sido un mantra entre los estadísticos durante años: demasiadas variables pueden hacer que un modelo pierda fiabilidad. Sin embargo, Breiman desafió esta visión tradicional, argumentando que la alta dimensionalidad no solo es manejable, sino que puede ser una **bendición** si se utiliza correctamente.
+
+[^3]: [Richard E. Bellman](https://en.wikipedia.org/wiki/Curse_of_dimensionality) fue el matemático que acuñó la expresión "maldición de la dimensionalidad".
+
+En lugar de reducir el número de variables, Breiman sugería que añadir más funciones o combinaciones de variables podía revelar más información útil para la predicción. En áreas como el reconocimiento de formas y las máquinas de soporte vectorial, este enfoque ha demostrado ser esencial para mejorar la capacidad predictiva. Breiman criticaba la aversión tradicional a la alta dimensionalidad, defendiendo que, en el mundo actual de grandes datos, el uso adecuado de estas variables adicionales podía mejorar significativamente la exactitud de los modelos.
+
+## Cajas negras
+
+Una de las críticas más fuertes de Leo era hacia la obsesión con la interpretabilidad en estadística. Él defendía que los **modelos algorítmicos**, aunque considerados "cajas negras" por muchos estadísticos debido a su complejidad, podían ofrecer una comprensión más precisa y rica de las relaciones entre variables que los modelos tradicionales.
+
+Ofrecía como ejemplo sus ***random forests***, que aunque son difíciles de interpretar, proporcionan mejores predicciones y análisis más detallados sobre la **importancia de las variables** en comparación con la regresión logística. En su visión, el verdadero objetivo de un análisis estadístico era obtener información precisa y útil, no simplemente un modelo que sea fácil de entender. En el mundo actual -razonaba-, donde los datos son complejos y las decisiones deben basarse en precisión, los modelos algorítmicos son una herramienta esencial para obtener el máximo valor de los datos, incluso si no son completamente transparentes.
+
+# En resumen
+
+Leo Breiman construyó una sólida crítica contra el *status quo* de la comunidad estadística en lo que a modelado se refiere. Se basaba en los siguientes argumentos:
+
+-   Los modelos de datos han proporcionado grandes éxitos en el análisis de datos y la extracción de información sobre los mecanismos que los producen. Pero también se ha hecho mal uso de ellos, lo que ha conducido a conclusiones cuestionables sobre el mecanismo subyacente. Aunque útiles, estos modelos no deberían ser considerados una solución universal, y es crucial que los estadísticos reconozcan sus limitaciones y adopten una visión más crítica y flexible.
+
+-   La atadura a los modelos de datos ha impedido que los estadísticos entren en nuevos campos científicos y comerciales donde los datos disponibles no son apropiados para los modelos tradicionales.
+
+-   En los últimas décadas el rápido crecimiento de las metodologías y aplicaciones de los modelos algorítmicos había sido muy rápida, de la mano de jóvenes con un perfil profesional ajeno a la estadística: eran informáticos. Si la estadística no se adapta y se abre a estos nuevos enfoques, corre el riesgo de perder relevancia en el análisis de datos moderno.
+
+-   Los avances de esta comunidad de practicantes del modelado algorítmico han producido importantes cambios de percepción en este área de especialidad: Rashomon, Occam, Bellman.
+
+-   Un modelo algorítmico puede proporcionar más y mejor información sobre la estructura de la relación entre variables de entrada y respuesta qu elos modelos tradicionales.
+
+# Conclusión
+
+Han pasado más de dos décadas desde la publicación de [*Statistical Modeling: The Two Cultures*](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full?tab=ArticleLink)*.* ¿Qué podemos decir de las críticas de Leo desde la experiencia acumulada en modelado tradicional y *machine learning* durante este periodo?
+
+El impacto de su crítica sigue resonando. Durante este tiempo, el mundo del análisis de datos ha vivido una revolución, con el **machine learning**, el **deep learning** y la **IA generativa** convirtiéndose en herramientas imprescindibles en muchas disciplinas. Lo que Breiman predijo, que los modelos algorítmicos se impondrían por su **precisión predictiva**, ha quedado claro en aplicaciones que van desde el reconocimiento de imágenes hasta los asistentes virtuales y los modelos generativos que transforman sectores enteros, desde la creación de contenido hasta la ciencia.
+
+Sin embargo, el debate que Breiman abrió no ha sido completamente resuelto. Leo fue demasiado optimista en algunos aspectos. A pesar de los avances y del dominio de los modelos algorítmicos, persisten desafíos importantes en términos de **interpretabilidad**, **robustez** y **sesgos** en los modelos de machine learning. Los algoritmos, si bien han mostrado una capacidad impresionante para aprender patrones complejos a partir de grandes volúmenes de datos, también pueden ser cajas negras opacas, difíciles de entender y de explicar. Esto presenta problemas éticos y de confianza, especialmente en sectores como la medicina y la justicia, donde la transparencia es crucial.
+
+Además, fenómenos como la **sobreajuste** y la **falta de generalización** a nuevos datos son problemas comunes en los modelos complejos, como los **redes neuronales profundas**, que requieren grandes cantidades de datos para entrenarse correctamente y pueden ser vulnerables a los cambios en las condiciones subyacentes de los datos. La reciente explosión de la **IA generativa** ha mostrado el potencial de estos modelos, pero también ha resaltado las limitaciones cuando se usan en contextos donde los errores tienen un alto costo.
+
+El debate entre las dos culturas —modelos tradicionales basados en datos y enfoques algorítmicos flexibles— sigue vivo. Mientras los **modelos algorítmicos** dominan en términos de precisión predictiva y son esenciales en aplicaciones donde los datos son vastos y complejos, los **modelos estadísticos tradicionales** siguen siendo relevantes para **atribuciones causales**, la **comprensión profunda** de los mecanismos subyacentes y la necesidad de interpretabilidad en situaciones donde la confianza y la transparencia son fundamentales.
+
+Breiman advertía que la estadística debía evolucionar o arriesgarse a perder relevancia en un mundo dominado por datos masivos. Si bien los modelos algorítmicos han liderado gran parte de la transformación, la estadística tradicional sigue aportando un valor incuestionable en áreas donde la simplicidad, la claridad y la robustez son esenciales. Los desafíos actuales exigen un enfoque híbrido: uno que aproveche la potencia de los **algoritmos de machine learning** y el **deep learning**, pero que también reconozca las virtudes de los modelos tradicionales, particularmente en términos de rigor matemático y solidez teórica.
+
+En definitiva, la pradera que Breiman incendió en 2001 no ha sido arrasada, sino transformada en un ecosistema más amplio y diverso, donde ambos enfoques coexisten y compiten. Las "dos culturas" siguen presentes, y el futuro de la estadística y la ciencia de datos dependerá de nuestra capacidad para aprovechar lo mejor de cada una, reconociendo que cada tipo de modelo tiene su lugar en función del problema que se busca resolver. La lección más importante que nos deja Breiman es que el dogmatismo no tiene cabida en la ciencia de datos: debemos ser pragmáticos y usar las mejores herramientas disponibles, ya sean modelos interpretables o complejas **cajas negras algorítmicas**.

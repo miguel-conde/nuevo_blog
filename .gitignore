@@ -5,3 +5,4 @@
 *.Rdata
 *.Rds
 /.quarto/
+/_site/

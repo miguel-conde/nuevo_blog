@@ -1,5 +1,5 @@
 ---
-title: "nuevo_blog"
+title: "Dateando"
 listing:
   contents: posts
   sort: "date desc"

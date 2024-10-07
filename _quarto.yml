@@ -2,19 +2,17 @@ project:
   type: website
 
 website:
-  title: "nuevo_blog"
+  title: "Dateando"
   navbar:
     left:
       - text: Home
         href: index.html
-      - text: About
-        href: about.html
     right:
       - about.qmd
       - icon: github
         href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: linkedin
+        href: https://github.com/miguel-conde
 format:
   html:
     theme: cosmo
@@ -23,6 +21,8 @@ format:
     toc_float: true
     toc_depth: 3
     number_sections: true
-
+execute:
+  freeze: auto
+  
 editor: visual
 
