@@ -12,4 +12,8 @@ about:
       href: https://github.com/miguel-conde
 ---
 
-About this blog
+Soy un científico de datos apasionado por la tecnología y el conocimiento. A través de este blog, comparto mi viaje de aprendizaje en áreas como estadística, data science, machine learning, desarrollo de entornos de trabajo y metodologías avanzadas. Mi curiosidad va más allá de la teoría; me interesa especialmente cómo estas herramientas y conocimientos impactan en los negocios, las empresas y en última instancia, en las personas.
+
+Aquí encontrarás reflexiones y aprendizajes prácticos, consejos sobre herramientas, y exploraciones de cómo equilibrar los desafíos profesionales con una vida personal armoniosa. Creo firmemente en la importancia de compartir lo que aprendemos para enriquecer nuestras comunidades y mantenernos siempre en evolución.
+
+Espero que lo que encuentres aquí te inspire y te sea útil. ¡Gracias por acompañarme en este viaje!

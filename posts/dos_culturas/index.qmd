@@ -5,6 +5,7 @@ author: "Miguel Conde"
 date: "2024-10-06"
 categories: [statistics, machine learning]
 image: "image.jpg"
+draft: true
 ---
 
 # Un pirómano en la bucólica pradera

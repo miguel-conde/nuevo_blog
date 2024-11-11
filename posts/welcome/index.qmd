@@ -1,12 +1,18 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2024-09-18"
+title: "Bienvenidos a Dateando"
+author: "Miguel Conde"
+date: "2024-10-01"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
 ![](thumbnail.jpg)
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+¡Hola y bienvenidos a Dateando!
+
+Este blog nace de mi deseo de compartir experiencias y aprendizajes en el apasionante mundo de la ciencia de datos, la tecnología y la estadística. Trabajo como científico de datos, y en mi día a día estoy constantemente aprendiendo sobre cómo aplicar herramientas de data science, machine learning, y técnicas de desarrollo en proyectos reales que impactan a las empresas y a las personas.
+
+Aquí encontrarás artículos sobre tecnología, metodologías de trabajo y desarrollo profesional, así como reflexiones sobre cómo equilibrar la vida profesional con la personal. Ya sea que seas un colega en el mundo de los datos o alguien que apenas esté comenzando, espero que este espacio te resulte útil, te inspire y despierte tu curiosidad.
+
+Este es un lugar para descubrir y explorar juntos, siempre con la idea de mejorar y evolucionar. Así que, ¡gracias por estar aquí! Nos espera mucho por aprender y compartir.
+
+¡Nos leemos pronto!

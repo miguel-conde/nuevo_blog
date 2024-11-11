@@ -3,6 +3,8 @@ project:
 
 website:
   title: "Dateando"
+  site-url: https://dateando.netlify.app/
+  description: "Hablemos de datos"
   navbar:
     left:
       - text: Home

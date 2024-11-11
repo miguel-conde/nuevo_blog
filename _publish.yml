@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: bfad158a-db39-4a62-a6ea-593d51dbe59f
+      url: 'https://dateando.netlify.app'

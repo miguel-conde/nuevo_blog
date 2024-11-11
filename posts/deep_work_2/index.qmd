@@ -1,0 +1,38 @@
+---
+title: "Trabajo profundo. ¿Qué es?"
+author: "Miguel Conde"
+date: "2024-11-23"
+categories: [data, management, deep work]
+image: "image.jpg"
+draft: true
+---
+
+# Trabajo a fondo: ¿qué es?
+
+PONER EJEMPLOS AQUÍ
+
+Esta forma de trabajo se caracteriza, como digo, por actividades en estado de **alta concentración** y **sin distracciones**. En estas circunstancias las capacidades cognitivas llegan a su máximo. Se crea valor, se mejoran las habilidades y no es fácil de replicar.
+
+## Valioso
+
+## Escaso
+
+## Con sentido
+
+# Contrapunto: trabajo superficial
+
+# La situación actual. ¿Por qué trabajamos así?
+
+## Difícil de medir
+
+En una empresa hay múltiples actividades y tareas. Simplificando mucho:
+
+-   En algunas podemos medir su productividad, es decir, la relación entre los recursos invertidos y los resultados obtenidos. Por ejemplo: el tiempo vendido de servicios profesionales.
+
+-   Hay otras en que el coste es más o menos fácil de medir, pero no el resultado. Por ejemplo, la formación, los sistemas de mensajería instantánea, el email, las reuniones, etc.
+
+-   En otras el coste es difícil de medir y el resultado también. Por ejemplo, las reuniones, la política de puertas abiertas, la cultura de la multitarea. Pero también el trabajo a fondo.
+
+La pregunta es ¿por qué, si la productividad tanto de las tendencias contrarias al trabajo profundo como el trabajo a fondo son difíciles de medir, nos hemos entregado a las primeras y hemos olvidado las segundas?
+
+# Conclusiones
