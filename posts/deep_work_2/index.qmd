@@ -1,5 +1,5 @@
 ---
-title: "Trabajo profundo. ¿Qué es?"
+title: "Trabajo profundo y Productividad"
 author: "Miguel Conde"
 date: "2024-11-23"
 categories: [data, management, deep work]
@@ -7,19 +7,116 @@ image: "image.jpg"
 draft: true
 ---
 
-# Trabajo a fondo: ¿qué es?
+*(este artículo es continuación de [Productividad y satisfacción laboral en la Economía del Conocimiento](/posts/deep_work_1/productividad_satisfacción_deep_work.qmd))*
 
-PONER EJEMPLOS AQUÍ
+# Tanta tecnología ¿para qué?
+
+"*You can see the computer age everywhere but in the productivity statistics*[^1]*.*"
+
+[^1]: "La Era de los Ordenadores se puede ver en todas partes menos en las estadísticas de productividad".
+
+Era 1987 cuando [Robert Solow](https://en.wikipedia.org/wiki/Robert_Solow) escribió esta frase en un [artículo](http://www.standupeconomist.com/pdf/misc/solow-computer-productivity.pdf) titulado "*We'd Better Watch Out*". Vaya frase redonda. Casi parece esculpida, más que escrita. Es de esas frases que hacen fortuna no solo por el significado, sino por el significante, que se bastaría así mismo.
+
+El texto, publicado en The New York Times, era una reseña sobre el libro "*Manufacturing Matters: The Myth of the Post-Industrial Economy*". En su crítica Solow abordaba la preocupación sobre la "desindustrialización" de la economía estadounidense.
+
+El caso que la frase hizo fortuna. No sólo era bonita, también parecía cierta: durante la década de los 70 y los años transcurridos de la de los 80 la productividad en Estados Unidos no había crecido, ni de lejos, lo que se esperaba según el mucho mayor incremento en inversión en Tecnología de la Información que tuvo lugar en los mismos años.
+
+Es lo que se conoce como "[Paradoja de la Productividad](https://en.wikipedia.org/wiki/Productivity_paradox)".
+
+Como era de esperar, dio lugar a un amplio debate que continúa a día de hoy. Aunque en Estados Unidos la productividad repuntó entre 1994 y 2004, volvió a ralentizarse desde ese año. Y no solo en Estaos Unidos. En general sucede lo mismo en todos los países que hemos dado en llamar desarrollados. Y hasta la fecha...
+
+Se han apuntado múltiples causas como candidatas a explicar la Paradoja, de origen muy posiblemente multifactorial:
+
+-   Dudas sobre las estadísticas de productividad (¡otra vez el problema de la medición! Como en el [artículo](/posts/deep_work_1/productividad_satisfacción_deep_work.qmd) anterior...).
+
+-   Necesidad de cambios organizatvos: a las empresas les lleva tiempo adaptar su forma de trabajar a los cambios tecnológicos ¿no?
+
+-   Falta de capital humano: quizá el retraso de la productividad respecto a la Tecnología se deba a que los trabajadores tardan en aprender a usarla eficazmente...
+
+Por poner mi granito de arena: puede que las Tecnologías de la Información se hayan usado para producir más eficazmente (con menos coste), pero no para aumentar significativamente la producción.
+
+Y así seguimos. Me parece que la Paradoja no solo no se ha resuelto, sino que ha aumentado con la llegada a bombo y platillo de la IA (generativa, de momento).
+
+Por cierto, 1987 fue el "anno mirabilis" para el bueno de Robert Solow. No solo dió en la diana con la frasecita y la Paradoja. También recibió el Nobel de Economía por sus análisis del crecimiento económico (claro).
+
+# Pero ¿por qué se van?
+
+De una frase afortunada a una expresión que también parece tocada por los hados: "*The Great Resignation*". Parece el título de una película, ¿verdad?
+
+Y de la Economía a la Psicología (aunque aplicada a la empresa). Fue [Anthony C. Klotz](https://www.mgmt.ucl.ac.uk/people/anthonyklotz?utm_source=chatgpt.com), un psicólogo dedicado a la docencia y a la investigación sobre "*the different ways that employees resign and the causes and effects of different resignation styles*", quien acuñó el concepto.
+
+En una [entrevista](https://www.bloomberg.com/news/articles/2021-05-10/quit-your-job-how-to-resign-after-covid-pandemic) en mayo de 2021 *predijo* un aumento significativo de las renuncias laborales en Estados Unidos, fenómeno que denominó **"Gran Dimisión"** (*The Great Resignation*). Su predicción se [confirmó](https://today.tamu.edu/2022/02/11/the-texas-am-professor-who-predicted-the-great-resignation/?utm_source=chatgpt.com) cuando, en noviembre de 2021, aproximadamente 4,5 millones de trabajadores estadounidenses renunciaron a sus empleos, estableciendo un récord histórico.
+
+Durante todo 2021 47.7 millones de trabajadores dimitieron de sus empleos; en 2022 la cifra aumentó a 50.5 millones.
+
+Cuando hizo esta predicción llevábamos 1 año de pandemia mundial, el COVID. Para Klotz, fue la gota que desbordó el vaso. Durante estos meses, muchas personas reevaluaron sus prioridades personales y laborales. La fatiga y el estrés acumulado durante años terminaron por desbordar a muchos trabajadores, especialmente en determinados sectores como la sanidad. Los confinamientos y el teletrabajo hicieron que la gente tuviera tiempo para reflexionar sobre el significado y propósito de su trabajo, así como sobre la flexibilidad que necesitaban para equilibrar sus vidas personal y profesional.
+
+Este fenómeno, que se observó primero en Estados Unidos, se extendió rapidamente a otros países. En España se ha registrado un [record histórico](https://www.businessinsider.es/record-dimisiones-laborales-espana-fenomeno-gran-renuncia-1399568?utm_source=chatgpt.com) de dimisiones laborales en los primeros 6 meses de este año, 2024: 1.38 millones de renuncias, un 2.7 % más que en el mismo periodo del año anterior, si bien "*aquí, las dimisiones no solo reflejan un deseo de cambio por parte de los trabajadores, sino que también están influenciadas por la reforma laboral de 2021"*.
+
+Meter el COVID: ¿DONDE ESTABAS CUANDO EL COVID?
+
+\<asdasdASD
+
+ASDFASDFASDF
+
+A
+
+SDFASDFA
+
+DSASDGADS
+
+# Productividad y Trabajo Profundo
+
+# Satisfacción Laboral y Trabajo Profundo
 
 Esta forma de trabajo se caracteriza, como digo, por actividades en estado de **alta concentración** y **sin distracciones**. En estas circunstancias las capacidades cognitivas llegan a su máximo. Se crea valor, se mejoran las habilidades y no es fácil de replicar.
 
-## Valioso
+ASOCIARLO A NUESTRO TIPO DE TRABAJO. HACERLO DE FORMA PERSONAL: YO TRABAJO COMO... Y CON...
+
+## Más y mejor
+
+Hemos empezado el artículo preguntándonos por los efecto de la tecnología en la productividad. En los días de la Inteliegncia Artificial, la incertidumbre se amplia: no solo la prouctividad se ve afectada, sino los trabajo mismos. Y no sabemos aún de qué manera.
+
+Pero algunas cosas si parecen claras: habrá trabajos que saldrán perdiendo y otros ganado.
+
+Entre los primeros, Newport mnciona en su libro dos: aquellos que sean fácilmente sustituibls por máquinas y los que se puedan encargar a los mejores del ramo, en detrimento, digamos, de los "mediocres".
+
+Entre los segundos se hallan los trabajos altamente cualificados (él dice "ser muy buenos trabajando con máquinas inteligentes"); los "superestrellas", es decir, aquellos que siempre van a estar demandados por su altísimo nivel de producción y calidad; y los inversores en tecnología (los "dueños de las máquinas": todos pensamos en algunos millonarios muy mediáticos, ¿verdad? Pero también los hay menos conocidos...) y gestores de negocios.
+
+Entonces, cada uno en nuestra profesión, pensemos: ¿qué podemos hacer para ser capaces de trabajar con las tecnologías más complejas y destacar en nuestro desempeño?
+
+Necesitamos dos capacidades:
+
+1.  **Aprendizaje**: **dominar** **rápidamente** cosas **difíciles**.
+2.  **Excelencia**: producir en el **máximo nivel** en cuanto a **calidad** y **rapidez**.
+
+Y aquí es donde entra el Trabajo Profundo.
+
+La Psicología nos explica **cómo** se aprende (TODO buscar citas): mediante la **práctica deliberada** de nuevas competencias. ¿En qué consiste? Básicamente en **practicar, practicar y practicar**. Pero no de cualquier manera: debe hacerse con **alta concentración** y recibiendo ***feedback***.
+
+¿A que suena a Trabajo Profundo?
+
+Por su parte, la Neurociencia nos aclara **por qué** aprendemos si hacemos caso a la Psicología: la práctica repetida con alta concentración **modifica físicamente nuestro cerebro**: los circuitos implicados se "fortalecen" (la palabra técinca es "mielinizan").
+
+Por tanto: si la atención se dispersa (es decir, si no hay Trabajo Profundo), la mielina también se dispersa y se reparte entre los distintos circuitos neuronales, sin que se refuerce ninguno en especial.
+
+Hasta aquí el aprendizaje. En cuanto a la excelencia, recordad esta "Ley" (TODO buscar citas):
+
+$$
+\text{Trabajo Producido de Alta Calidad} = \text{Tiempo invertido} \times \text{Intensidad e la concentración}
+$$
+
+Primera consecuencia: cuando tengas que hacer un trabajo intelectual importante, hazlo en **periodos ininterrumpido**s y **lo más largos que puedas** (ya veremos que esto de los periodos largos hay que adaptarlo a tu entorno de trabajo).
+
+¿Por qué?
 
 ## Escaso
 
 ## Con sentido
 
 # Contrapunto: trabajo superficial
+
+## EJEMPLOS
 
 # La situación actual. ¿Por qué trabajamos así?
 
@@ -36,3 +133,11 @@ En una empresa hay múltiples actividades y tareas. Simplificando mucho:
 La pregunta es ¿por qué, si la productividad tanto de las tendencias contrarias al trabajo profundo como el trabajo a fondo son difíciles de medir, nos hemos entregado a las primeras y hemos olvidado las segundas?
 
 # Conclusiones
+
+# Para saber más
+
+-   [Deconstructing the Productivity Paradox](https://medium.com/mit-initiative-on-the-digital-economy/deconstructing-the-productivity-paradox-3a661a0b7b13) - Researchers say that a shortage of exceptional talent is stalling productivity growth in the digital economy
+
+-   [Digital Abundance and Scarce Genius: Implications for Wages, Interest Rates, and Growth](http://ide.mit.edu/sites/default/files/publications/Digital%20Abundance%20and%20Scarce%20Genius%20for%20shortened%20abstract.pdf)
+
+-   [The Productivity Paradox: When Being Busy Doesn’t Equate to Being Productive](https://medium.com/disruptive-leaders-journal/the-productivity-paradox-when-being-busy-doesnt-equate-to-being-productive-469516407d91)

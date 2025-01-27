@@ -1,0 +1,60 @@
+---
+title: "Untitled"
+author: "Miguel Conde"
+date: "2025-01-25"
+categories: [statistics, science, machine learning, business]
+image: "image.jpg"
+draft: true
+---
+
+# **El aprendizaje automático en la ciencia: ¿es realmente suficiente?**
+
+En el siglo XVII, una manzana –según cuenta la leyenda– cayó del árbol frente a Isaac Newton, y con ello nació la teoría gravitatoria. Pero lo verdaderamente impresionante no fue la manzana, sino la capacidad de Newton para describir el fenómeno con precisión matemática. Su teoría no solo explicaba por qué los objetos caían, sino que además permitía predecir sus movimientos y, lo más importante, intervenir en ellos: construir puentes, enviar cohetes al espacio o ajustar la órbita de satélites con precisión milimétrica.
+
+Hoy, el aprendizaje automático (ML) nos ofrece herramientas poderosas para la predicción, pero aquí surge una pregunta clave: **¿es suficiente predecir o necesitamos algo más?** Si queremos comprender a fondo los fenómenos y tomar decisiones informadas para intervenir en ellos, confiar únicamente en modelos de ML básicos, que esencialmente **interpolan datos**, no es suficiente.
+
+## **La promesa (y la trampa) del aprendizaje automático**
+
+El aprendizaje automático ha revolucionado muchas áreas científicas. Desde la predicción del clima hasta la detección temprana de enfermedades, estos modelos pueden identificar patrones complejos en los datos con una precisión impresionante. Sin embargo, **su fortaleza radica en la predicción, no en la comprensión.**
+
+Los modelos de ML, en su forma más básica, funcionan como sofisticadas máquinas de interpolación: analizan grandes volúmenes de datos históricos y encuentran relaciones estadísticas para predecir resultados futuros. Pero aquí está el problema: **predicción no es lo mismo que entendimiento.**
+
+En la ciencia, no basta con saber qué sucederá; necesitamos entender **por qué** sucede para poder tomar decisiones, optimizar procesos o cambiar el rumbo de los acontecimientos.
+
+## **Las limitaciones del aprendizaje automático para la ciencia**
+
+A diferencia de los modelos científicos tradicionales, que se basan en leyes y principios fundamentales, los modelos de ML no proporcionan una visión clara de los mecanismos subyacentes. Esto plantea desafíos cruciales cuando queremos hacer algo más que predecir; por ejemplo, cuando buscamos intervenir o controlar un fenómeno.
+
+Algunas de las principales limitaciones de los modelos de ML básicos incluyen:
+
+1.  **Interpolación vs. causalidad:** Los modelos de ML aprenden patrones a partir de los datos disponibles, pero no necesariamente capturan relaciones causales. Si queremos intervenir en un sistema –por ejemplo, diseñar políticas de salud pública o mitigar el cambio climático– necesitamos modelos que expliquen cómo los cambios en una variable afectarán a las demás, no solo correlaciones pasadas.
+
+2.  **Falta de explicabilidad:** Aunque los modelos pueden ofrecer predicciones precisas, a menudo son cajas negras opacas. Sin una interpretación clara, resulta difícil confiar en ellos para tomar decisiones críticas o justificar intervenciones ante expertos y responsables de políticas.
+
+3.  **Control limitado:** Sin una comprensión causal, es difícil determinar qué acciones específicas pueden llevarnos a un resultado deseado. ¿Cómo reducir el riesgo de una enfermedad si solo sabemos qué factores están correlacionados, pero no cuáles la causan?
+
+4.  **Problemas de generalización:** Los modelos de ML funcionan bien dentro de los datos con los que fueron entrenados, pero pueden fallar al enfrentarse a escenarios nuevos o fuera del rango de los datos originales. La ciencia, por el contrario, busca modelos que puedan generalizar a situaciones desconocidas.
+
+5.  **Reproducibilidad y robustez:** La capacidad de replicar experimentos es un pilar fundamental de la ciencia. Sin embargo, los modelos de ML dependen de datos específicos y ajustes complejos, lo que puede dificultar la reproducibilidad de sus resultados.
+
+## **Más allá de la predicción: hacia una integración más robusta**
+
+Para que el aprendizaje automático se convierta en una herramienta verdaderamente científica, debe ir más allá de la predicción e incorporar elementos que permitan la **comprensión profunda** y la **intervención efectiva.** Algunas estrategias para lograrlo incluyen:
+
+-   **Modelos híbridos:** Combinar ML con modelos basados en principios físicos o teóricos para obtener predicciones más interpretables y accionables.
+
+-   **Causalidad:** Explorar enfoques como la inferencia causal para comprender las relaciones de causa y efecto, más allá de simples correlaciones.
+
+-   **Interpretabilidad:** Incorporar técnicas como SHAP o LIME para abrir la caja negra del ML y entender el impacto de cada variable en los resultados.
+
+-   **Cuantificación de la incertidumbre:** No basta con obtener una predicción; es crucial saber cuán confiables son los resultados para tomar decisiones informadas.
+
+-   **Conocimiento del dominio:** Integrar el conocimiento experto de cada campo para guiar la construcción y validación de modelos.
+
+## **Reflexión final**
+
+El aprendizaje automático es una herramienta poderosa, pero no es un sustituto del método científico tradicional. La verdadera ciencia no solo predice, sino que explica, permite el control y genera conocimiento aplicable.
+
+Si nos conformamos con modelos de ML que solo interpolan datos pasados, corremos el riesgo de construir soluciones que parecen funcionar a corto plazo, pero que carecen de la profundidad necesaria para abordar los desafíos complejos de la ciencia.
+
+Así como Newton no se limitó a observar la caída de la manzana, sino que formuló leyes que nos permiten intervenir en el mundo, nuestra meta como científicos de datos debe ser ir más allá de la predicción y buscar una comprensión más profunda. Solo entonces podremos aprovechar todo el potencial del aprendizaje automático en la ciencia.

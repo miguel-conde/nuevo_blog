@@ -1,0 +1,169 @@
+---
+title: "Untitled"
+---
+
+# Vida, obra no científica, obra científica
+
+1)  Resumen de su vida:
+
+Domingo de Soto nació en Segovia, España, en 1495\[7\]. Ingresó en la Universidad de Alcalá de Henares en 1510, donde se graduó y posteriormente estudió en la Universidad de París\[4\]. En 1525 ingresó en la Orden de los Dominicos y cambió su nombre de Francisco a Domingo\[7\].
+
+Su carrera académica comenzó en la Universidad de Salamanca en 1531-1532 como suplente de Francisco de Vitoria. En 1532 obtuvo la cátedra de vísperas de Teología, que ocupó hasta 1549\[4\]. Además de su labor académica, Soto fue confesor del emperador Carlos I y participó en el Concilio de Trento y en la Dieta de Augsburgo como teólogo imperial\[4\].
+
+Domingo de Soto falleció en Salamanca el 15 de noviembre de 1560\[7\].
+
+2)  Resumen de su obra no científica:
+
+Soto fue un prolífico escritor en diversos campos:
+
+-   Teología: Escribió comentarios sobre la "Summa Theologica" de Santo Tomás de Aquino\[4\].
+-   Derecho: Contribuyó significativamente al desarrollo del Ius Gentium, base del actual derecho internacional, y escribió el primer tratado sobre los derechos de los pobres\[3\].
+-   Filosofía: Publicó obras como "In Dialecticam Aritotelis commentarii" (1543) y comentarios sobre la Isagoge de Porfirio y las Categorías de Aristóteles\[1\].
+-   Ética y política: Abordó problemas filosófico-políticos en sus relecciones, como "De Dominio" (1534-1535) y "De ratione tegendi et detegendi secretum" (1541)\[7\].
+
+Su obra más célebre es "De iustitia et iure", publicada en 1553, que trata temas de justicia y derecho\[2\].
+
+3)  Resumen de su obra científica:
+
+La contribución científica más destacada de Domingo de Soto se encuentra en el campo de la física:
+
+-   En 1545, escribió "Super octo libros Physicorum Aristotelis commentaria" y "Super octo libros physicorum Aristotelis quaestiones", publicados en 1551\[4\].
+-   Fue pionero en la descripción del movimiento de caída libre como uniformemente acelerado, anticipándose 60 años a Galileo Galilei\[3\]\[6\].
+-   Introdujo la noción de masa inerte o "resistencia interna" al movimiento, concepto fundamental en la mecánica newtoniana\[3\]\[5\].
+-   Su trabajo sobre la caída de los cuerpos se considera una base esencial para el posterior desarrollo de la teoría de la gravitación de Newton\[8\].
+-   También reflexionó sobre geometría y matemáticas en su obra "In libros posteriorum Aristotelis sive De demonstratione absolutissima commentaria" (1573)\[2\].
+
+Algunos historiadores de la ciencia proponen situar la línea divisoria entre la ciencia del Renacimiento y la ciencia moderna en la década que abarca las obras de Copérnico (1543), Soto (1551) y Benedetti (1554)\[5\].
+
+Citations: \[1\] <https://letra.unileon.es/?autorz=domingo-de-soto> \[2\] <https://www.larramendi.es/esc_sal/i18n/catalogo_imagenes/grupo.do?path=1021461> \[3\] <https://www.omnesmag.com/actualidad/cultura/domingo-de-soto-teologo-y-fisico/> \[4\] <https://alumni.usal.es/domingo-soto-la-espiritualidad-derecho-la-fisica-matematica-primero-enunciar-la-ley-caida-los-graves/> \[5\] <https://deverdaddigital.com/domingo-de-soto-un-espanol-en-el-origen-de-la-fi%C2%AD%C2%ADsica-moderna/> \[6\] <https://theobjective.com/elsubjetivo/opinion/2022-10-23/domingo-de-soto-el-gran-desconocido-de-la-escuela-de-salamanca/> \[7\] <https://dbe.rah.es/biografias/8388/domingo-de-soto> \[8\] <https://upload.wikimedia.org/wikipedia/commons/d/d7/DOMINGO_DE_SOTO016.JPG?sa=X&ved=2ahUKEwj15OCdtJCLAxWGCrkGHTO7FrUQ_B16BAgFEAI> \[9\] <https://revistas.usal.es/dos/index.php/0213-3563/article/download/14437/16382/55290> \[10\] <https://blogs.comillas.edu/FronterasCTR/?p=2642> \[11\] <https://economipedia.com/definiciones/domingo-de-soto.html> \[12\] <https://es.wikipedia.org/wiki/Domingo_de_Soto>
+
+# Aportaciones al desarrollo del Ius Gentium y de los problemas filosófico-políticos que trató en "De Dominio", "De ratione tegendi et detegendi secretum" y "De iustitia et iure".
+
+Domingo de Soto realizó importantes aportaciones al desarrollo del Ius Gentium y abordó diversos problemas filosófico-políticos en sus obras:
+
+## Ius Gentium
+
+Soto contribuyó significativamente al desarrollo del Ius Gentium, que es la base del actual derecho internacional\[1\]. Su trabajo en este campo ayudó a establecer principios fundamentales para las relaciones entre naciones y pueblos.
+
+## "De Dominio" (1534-1535)
+
+En esta obra, Soto analizó y clasificó los modos de dominium:
+
+1.  Dominium rerum: Poder económico o derecho de propiedad según el dictamen de la razón.
+2.  Dominium iurisdictionis: Poder de la autoridad política para preservar el orden civil mediante la aplicación de leyes\[2\].
+
+Soto articuló el concepto de dominio con la gnoseología de la ley natural, estableciendo que las formas subordinadas de dominio siguen la ley natural y el derecho de gentes, sentando así las bases para los derechos humanos\[2\].
+
+## "De ratione tegendi et detegendi secretum" (1541)
+
+En esta obra, Soto abordó cuestiones relacionadas con la ética y la política, específicamente sobre la naturaleza de los secretos y las circunstancias en las que estos deben ser revelados o mantenidos\[3\]\[7\].
+
+## "De iustitia et iure" (1553)
+
+Esta obra es considerada uno de los hitos más importantes en la historia de la filosofía jurídica\[4\]. En ella, Soto:
+
+1.  Definió la esencia de la ley (essentia legis), aplicándola a las necesidades jurídicas de su época.
+2.  Demostró una evolución homogénea y continuidad doctrinal respecto a Tomás de Aquino.
+3.  Adoptó una postura intelectualista en contra del voluntarismo, definiendo la ley como "ordinatio rationis et praeceptio"\[4\].
+
+Soto también trató temas como la obligación de los obispos, la simonía, y cuestiones de justicia e injusticia\[5\]. Su trabajo en "De iustitia et iure" fue fundamental para el desarrollo de la filosofía del derecho y la ética política de su tiempo.
+
+Citations: \[1\] <https://repositorio.uca.edu.ar/bitstream/123456789/12512/1/lectura-domingo-soto.pdf> \[2\] <https://repositorio.uca.edu.ar/bitstream/123456789/3043/1/ley-natural-dominium-soto-boeira.pdf> \[3\] <https://www.cervantesvirtual.com/obra/relectio-fratris-dominici-soto-de-ratione-tegendi-detegendi-secretum/> \[4\] <https://dialnet.unirioja.es/descarga/articulo/8511248.pdf> \[5\] <https://www.larramendi.es/esc_sal/i18n/catalogo_imagenes/grupo.do?path=1021461> \[6\] <https://dialnet.unirioja.es/servlet/articulo?codigo=1089084> \[7\] <https://www.cervantesvirtual.com/obra/relectio-fratris-dominici-soto-segobiensis-de-ratione-tegendi-et-detegendi-secretum/> \[8\] <https://revistaespiritu.istomas.org/la-esencia-de-la-ley-segun-domingo-de-soto/> \[9\] <https://dialnet.unirioja.es/descarga/articulo/1089084.pdf> \[10\] <https://es.wikipedia.org/wiki/Domingo_de_Soto>
+
+# Influencia posterior de los trabajos de Domingo de Soto sobre Ius Gentium y los diversos problemas filosófico-políticos que abordó
+
+Los trabajos de Domingo de Soto sobre el Ius Gentium y los problemas filosófico-políticos que abordó han tenido una influencia significativa y duradera:
+
+1.  Derecho internacional: Sus contribuciones al Ius Gentium sentaron las bases para el desarrollo del derecho internacional moderno\[1\]. Soto entendía el ius peregrinandi et degendi (derecho a migrar y residir) como parte de la comunicación natural del mundo y de los bienes, lo cual ha influido en debates posteriores sobre colonización, conquistas y migraciones\[1\].
+
+2.  Derechos humanos: La articulación que hizo Soto del concepto de dominio con la gnoseología de la ley natural estableció fundamentos para la concepción moderna de los derechos humanos\[1\].
+
+3.  Justicia social y asistencia a los pobres: Su obra "Deliberación en la causa de los pobres" (1545) influyó significativamente en los debates sobre reforma social y establecimiento de principios de justicia social\[1\]. Sus argumentos siguen siendo relevantes en discusiones contemporáneas sobre pobreza y asistencia social.
+
+4.  Teoría política y del poder: El análisis de Soto sobre el poder económico, la libertad personal y el poder político ha tenido un impacto duradero en la filosofía política\[2\]. Su concepción del poder y sus limitaciones ha influido en el pensamiento político posterior.
+
+5.  Filosofía del derecho: Su obra "De iustitia et iure" (1553) es considerada uno de los hitos más importantes en la historia de la filosofía jurídica\[4\]\[6\]. Su definición de la esencia de la ley y su aplicación a las necesidades jurídicas de su época han influido en el desarrollo posterior de la filosofía del derecho.
+
+6.  Ética y política: Sus trabajos sobre temas como el secreto ("De ratione tegendi et detegendi secretum") han contribuido a debates éticos y políticos posteriores\[5\].
+
+7.  Humanismo y reforma social: El enfoque de Soto, que combinaba el humanismo con una preocupación práctica por los problemas sociales, ha influido en posteriores movimientos de reforma social y en la concepción del papel de la Iglesia y el Estado en la asistencia a los necesitados\[3\].
+
+En resumen, el pensamiento de Domingo de Soto ha tenido una influencia duradera en campos como el derecho internacional, los derechos humanos, la filosofía política y jurídica, y la ética social, contribuyendo significativamente al desarrollo del pensamiento occidental en estas áreas.
+
+Citations: \[1\] <https://ojs.umsa.bo/ojs/index.php/classica/article/download/165/539/1173> \[2\] <https://eusal.es/eusal/catalog/book/978-84-7481-916-8> \[3\] <https://www.elconfidencial.com/alma-corazon-vida/2023-04-08/domingo-de-soto-francisco-de-vitoria-carlos-v_3605539/> \[4\] <https://webphilosophia.com/estrategia/domingo-de-soto-sobre-la-justicia-y-el-derecho/> \[5\] <https://dbe.rah.es/biografias/8388/domingo-de-soto> \[6\] <https://revistaespiritu.istomas.org/la-esencia-de-la-ley-segun-domingo-de-soto/> \[7\] <https://polemos.pe/la-escuela-salamanca-influencia-la-formacion-del-derecho-gentes/> \[8\] <https://www.larramendi.es/esc_sal/i18n/catalogo_imagenes/grupo.do?path=1021461> \[9\] <https://gredos.usal.es/bitstream/handle/10366/133668/Sin_titulo.pdf;sequence=1>
+
+# Cronología: lugares de residencia y ocupaciones
+
+Aquí está la cronología de los lugares de residencia y ocupaciones de Domingo de Soto:
+
+1495: Nace en Segovia, España.
+
+1510-1516: Estudia en la Universidad de Alcalá de Henares, donde se gradúa como bachiller.
+
+1516-1520: Continúa su formación en la Universidad de París, estudiando teología y graduándose como maestro de artes en 1519.
+
+1520-1524: Regresa a España y se incorpora a la Universidad de Alcalá como profesor de filosofía.
+
+1524: Realiza un retiro espiritual en la abadía benedictina de Montserrat.
+
+1524-1525: Se traslada a Burgos, donde ingresa en el Convento de San Pablo de la Orden de los Dominicos y enseña Filosofía y Teología durante su noviciado.
+
+1525: Toma el hábito dominico en Burgos, cambiando su nombre de Francisco a Domingo. Visita brevemente Segovia.
+
+1525-1532: Se establece en Salamanca, residiendo en el Convento de San Esteban y enseñando en su colegio.
+
+1531-1532: Ejerce como profesor suplente de Francisco de Vitoria en la cátedra de Prima de Teología en la Universidad de Salamanca.
+
+1532-1549: Obtiene la cátedra de Vísperas de Teología en la Universidad de Salamanca.
+
+1545: Es enviado al Concilio de Trento como teólogo imperial.
+
+1548: Participa en la Dieta de Augsburgo y es nombrado confesor del emperador Carlos I.
+
+1550-1551: Participa en la Junta de Valladolid sobre la cuestión indígena.
+
+1550: Es nombrado calificador de libros del Santo Oficio.
+
+1560: Fallece en Salamanca, donde había permanecido vinculado a la Universidad hasta su muerte.
+
+Citations: \[1\] <https://alumni.usal.es/domingo-soto-la-espiritualidad-derecho-la-fisica-matematica-primero-enunciar-la-ley-caida-los-graves/> \[2\] <https://www.elconfidencial.com/alma-corazon-vida/2023-04-08/domingo-de-soto-francisco-de-vitoria-carlos-v_3605539/> \[3\] <https://letra.unileon.es/?autorz=domingo-de-soto> \[4\] <https://es.wikipedia.org/wiki/Domingo_de_Soto> \[5\] <https://economipedia.com/definiciones/domingo-de-soto.html> \[6\] <https://www.larramendi.es/esc_sal/i18n/catalogo_imagenes/grupo.do?path=1021461> \[7\] <https://dbe.rah.es/biografias/8388/domingo-de-soto> \[8\] <https://revistas.usal.es/dos/index.php/0213-3563/article/download/14437/16382/55290> \[9\] <https://blogs.comillas.edu/FronterasCTR/?p=2642>
+
+# Aportaciones científicas
+
+Las aportaciones de Domingo de Soto a la física fueron notables, especialmente en el estudio del movimiento y la caída libre. Aquí se detallan sus principales contribuciones:
+
+## Movimiento de caída libre
+
+Soto fue pionero en la descripción correcta del movimiento de caída libre:
+
+1.  En su obra "Super octo libros Physicorum Aristotelis quaestiones" (1551), describió el movimiento de caída libre como uniformemente acelerado.
+
+2.  Formuló que la distancia recorrida por un objeto en caída libre es proporcional al cuadrado del tiempo transcurrido, anticipándose a Galileo por más de 60 años.
+
+3.  Utilizó el término "motus uniformiter difformis" (movimiento uniformemente disforme) para describir la aceleración constante, aplicándolo tanto a la caída libre como al movimiento de los cuerpos celestes.
+
+## Noción de masa inerte
+
+Soto introdujo conceptos fundamentales para la comprensión de la masa y la inercia:
+
+1.  Desarrolló la noción de "resistencia interna" al movimiento, que es esencialmente equivalente al concepto moderno de masa inerte.
+
+2.  Esta idea fue crucial para el posterior desarrollo de la mecánica newtoniana, ya que distinguía entre la resistencia inherente al cuerpo y la resistencia externa del medio.
+
+## Geometría y matemáticas
+
+Aunque menos conocidas, Soto también realizó contribuciones en el campo de la geometría y las matemáticas:
+
+1.  En su obra "In libros posteriorum Aristotelis sive De demonstratione absolutissima commentaria" (1573), reflexionó sobre conceptos geométricos y matemáticos.
+
+2.  Aplicó principios matemáticos a sus estudios físicos, lo que le permitió formular descripciones cuantitativas del movimiento.
+
+## Impacto y legado
+
+El trabajo de Soto en física fue revolucionario para su tiempo:
+
+1.  Sus descripciones del movimiento acelerado y la caída libre sentaron las bases para el posterior desarrollo de la mecánica clásica.
+
+2.  Algunos historiadores de la ciencia consideran que sus contribuciones marcan el inicio de la ciencia moderna, junto con las obras de Copérnico y Benedetti.
+
+3.  Aunque su trabajo no fue ampliamente reconocido en su época, estudios modernos han revelado la importancia de sus contribuciones a la física pre-newtoniana.

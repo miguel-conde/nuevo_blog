@@ -1,7 +1,7 @@
 ---
 title: "Productividad y satisfacción laboral en la Economía del Conocimiento"
 author: "Miguel Conde"
-date: "2024-11-09"
+date: "2024-11-12"
 categories: [data, management, deep work]
 image: "marissa-grootes--837JygbCJo-unsplash.jpg"
 ---
@@ -82,7 +82,7 @@ La "culpable" del cruce era la moraleja que nos ha enseñado "El Día del Juicio
 
 Y eso plantea reflexiones sobre la gestión de la productividad y la satisfacción personal y laboral, especialmente en los **trabajos intensivos en conocimiento**, que cada vez son más. Y lo hace desde el ámbito individual hasta el organizacional.
 
-# Rescatar el enfoque en tiempos de distracción: la Productividad que no se mide
+# Vivimos en la era de la dispersión: la productividad que no se mide
 
 Newport plantea que, por un lado, en los trabajos especializados, intensivos en conocimiento, las claves de la productividad son las habilidades de:
 
@@ -112,7 +112,7 @@ Pero nos hemos entregado de pleno a la práctica de estas actividades sin cuesti
 
 > Las tendencias culturales actuales, especialmente en los ámbitos laborales, favorecen hábitos de trabajo que dificultan el trabajo profundo. No son los más eficaces, sino los más fáciles o *cool*.
 
-Recapitulando:
+# Recapitulando
 
 En una empresa hay múltiples actividades y tareas. Si simplificamos mucho podemos distinguir 3 tipos:
 
@@ -132,8 +132,6 @@ Porque ya tenemos evidencias de que la **dispersión de la atención** que estas
 
 Por el contrario, la evidencia señala que el **trabajo a fondo** (***Deep Work***) las promueve.
 
-En próximos posts te ahondaré en la reflexión acerca del trabajo profundo: ¿qué tipo de trabajo tienes? ¿Cómo trabajas? ¿Qué tendrías que dejar de hacer y qué tendráis que empezar a hacer? Tu lugar de trabajo ¿favorece tu productividad y tu desrrollo? ¿cómo impacta todo esto no solo en tu carrera profesional, sino en tu vida *personal*?
+En próximos posts ahondaremos en la reflexión acerca del trabajo profundo: ¿qué tipo de trabajo tienes? ¿Cómo trabajas? ¿Qué tendrías que dejar de hacer y qué tendráis que empezar a hacer? Tu lugar de trabajo ¿favorece tu productividad y tu desrrollo? ¿cómo impacta todo esto no solo en tu carrera profesional, sino en tu vida *personal*?
 
 Acompáñame.
-
-# 

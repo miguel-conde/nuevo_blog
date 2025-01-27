@@ -12,9 +12,12 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: linkedin
         href: https://github.com/miguel-conde
+      - icon: linkedin
+        href: https://www.linkedin.com/in/condemiguel/
+      - text: "RSS"
+        icon: rss
+        href: index.xml
 format:
   html:
     theme: cosmo
