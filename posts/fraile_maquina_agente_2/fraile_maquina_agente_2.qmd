@@ -1,0 +1,340 @@
+---
+title: "La Sección de Ciencia de Datos del Ministerio del Tiempo"
+subtite: "Con el epílogo a la historia del fraile, el artefacto y el agente (de datos)"
+author: "Miguel Conde"
+date: "2025-01-31"
+code-fold: true
+execute:
+  warning: false
+  message: false
+categories: [statistics, science, machine learning]
+image: "copernican_system.webp"
+draft: false
+---
+
+En el [post anterior](/posts/fraile_maquina_agente/fraile_maquina_agente.qmd) os conté cómo logramos confundir al pobre fray [Domingo de Soto](https://es.wikipedia.org/wiki/Domingo_de_Soto) para que no se adelantara a Newton en sus descubrimientos y la Historia, tal como la conocemos, cambiara para siempre. Hoy os voy a contar cómo lo hicimos.
+
+Ya sabéis que soy un funcionario del Ministerio del Tiempo. Nuestra misión es esa, mantener la Historia inalterada. Lo que aun no sabeis es que en el Ministerio tenemos una Dirección General de Ciencia y Tecnología y, dentro de ella, una Sección de Ciencia de Datos, a la que pertenezco.
+
+En esencia, el engaño se basó en proporcionarle un pergamino envejecido con una tabla de datos con información acerca de las principales estrellas:
+
+```{r}
+#| echo: false
+
+options(tidyverse.quiet  = TRUE)
+options(tidymodels.quiet = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+library(DT)
+
+masa_sol     <- 1.989e30  # kg
+radio_sol    <- 6.957e8   # m
+masa_tierra  <- 5.972e24  # kg
+radio_tierra <- 6.371e6   # m
+G            <- 6.674e-11 # m^3 kg^-1 s^-2
+
+
+set.seed(2025)
+
+stars_df <- read_csv("data/estrellas_mas_luminosas.csv", show_col_types = FALSE) %>% 
+  janitor::clean_names() %>% 
+  mutate(
+    masa_kg = masa_m * masa_sol,
+    radio_m = radio_r * radio_sol
+  ) %>% 
+  mutate(
+    g_superficie = G * masa_kg / radio_m^2,
+    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.01)),
+  )
+
+stars_df %>%
+  select(nombre, masa = masa_kg, radio = radio_m, g = g_sup_medida) %>%
+  DT::datatable(
+    extensions = 'Buttons', options = list(
+    dom = 'Bfrtip',
+    buttons = c('copy', 'csv', 'excel')
+    )
+  ) %>% 
+  DT::formatRound(c("g"), 3) %>% 
+  DT::formatSignif(c("masa"), 4)
+```
+
+<br>
+
+Pero junto a la tabla le entregué un "artefacto": no era nada más que una *tablet* disimulada, encuadernada en cuero viejo y alimentada por energía solar. En su pantalla se accedía a una original apicación con motivos orientales (¡qué imaginación la de la División M del Ministerio, la encargada de la I+D!). La aplicación permitía introducir a mano los datos de los cuerpos celestes y utilizaba un modelo *random forest* para hacer predicciones de la gravedad en superficie.
+
+Un modelo como este:
+
+```{r}
+set.seed(123)
+cv_folds <- vfold_cv(stars_df, v = 10)
+
+rf_model <- rand_forest(
+  mode = "regression",
+  mtry = 2,
+  trees = 500
+) %>%
+  set_engine("ranger")
+
+rf_workflow <- workflow() %>%
+  add_formula(log(g_sup_medida) ~ log(masa_kg) + log(radio_m)) %>%
+  add_model(rf_model)
+
+ctrl <- control_resamples(save_pred = TRUE, save_workflow = TRUE)
+rf_results <- fit_resamples(
+  rf_workflow,
+  resamples = cv_folds,
+  metrics = metric_set(rmse, rsq),
+  control = ctrl
+)
+```
+
+Con unas métricas de validación cruzada:
+
+```{r}
+rf_results %>% collect_metrics()
+```
+
+Predice suficientemente bien:
+
+```{r}
+best_rf_model <- rf_results %>% 
+  select_best(metric = "rmse")
+
+final_rf_workflow <- finalize_workflow(rf_workflow, best_rf_model)
+
+final_rf_fit <- fit(final_rf_workflow, stars_df)
+
+stars_df %>% 
+  select(g_sup_medida) %>% 
+  bind_cols(
+    predict(final_rf_fit, stars_df) %>% 
+      mutate(.pred = exp(.pred))
+    ) %>% 
+  ggplot(aes(g_sup_medida, .pred)) +
+  geom_point() +
+  geom_abline() +
+  labs(
+    title = "Predicciones de Gravedad en la Superficie - ESTRELLAS",
+    subtitle = "Random Forest",
+    x = "Gravedad Superficie Medida",
+    y = "Gravedad Superficie Predicha"
+  )
+```
+
+Como recordaréis, también hicimos llegar al fraile una segunda tabla, esta vez con datos de cuerpos del sistema solar:
+
+```{r}
+set.seed(2025)
+sist_solar_df <- read_csv("data/cuerpos_mas_masivos_sistema_solar.csv", show_col_types = FALSE) %>% 
+  janitor::clean_names()%>% 
+  mutate(
+    masa_kg = masa_m * masa_tierra,
+    radio_m = radio_r * radio_tierra
+  ) %>% 
+  mutate(
+    g_superficie = G * masa_kg / radio_m^2,
+    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.01)),
+  )
+
+sist_solar_df %>%
+  select(nombre, masa = masa_kg, radio = radio_m, g = g_sup_medida) %>%
+  DT::datatable(
+    extensions = 'Buttons', options = list(
+    dom = 'Bfrtip',
+    buttons = c('copy', 'csv', 'excel')
+    )
+  ) %>% 
+  DT::formatRound(c("g"), 3) %>% 
+  DT::formatSignif(c("masa"), 4)
+```
+
+Cuando fray Domingo usó el modelo con estos datos, obtuvo este disparate:
+
+```{r}
+rf_predictions_sist_sol <- predict(final_rf_fit, sist_solar_df)
+
+tbl_pred_sist_sol <- sist_solar_df %>% 
+  select(nombre, g_sup_medida) %>% 
+  bind_cols(
+     rf_predictions_sist_sol %>% 
+      mutate(.pred = exp(.pred))
+    )
+ 
+tbl_pred_sist_sol
+```
+
+El modelo, que no predecía mal con el dataset de estrellas, ¡predice siempre lo mismo con el dataset del Sistema Solar!
+
+```{r}
+tbl_pred_sist_sol %>% 
+  mutate(
+    error = g_sup_medida - .pred
+  ) %>% 
+  summarise(
+    rmse = sqrt(mean(error^2)),
+    mae = mean(abs(error))
+  )
+
+```
+
+Seguramente ya tehabrás dado cuenta de por qué sucede esto. ¿No? ¿Quierespensarlo un poco antes de seguir leyendo?
+
+Una pista: entre los datos que le dimos al fraile sobre estrellas, hay una, Rigil Kentaurus, que se parece mucho al Sol y resulta ser la más pequeña de las 42 que hay en el dataset.
+
+¿Todavía nada?
+
+Otra pista: mira lo que el modelo Random Forest predice para esa estrella:
+
+```{r}
+rf_predictions_stars <- predict(final_rf_fit, stars_df) %>%
+  bind_cols(stars_df) %>% 
+  mutate(
+    g_sup_pred = exp(.pred)
+  ) 
+
+rf_predictions_stars %>% 
+  filter(nombre == "Rigil Kentaurus") %>% 
+  select(nombre, masa_m, radio_r, g_sup_pred)
+```
+
+**¿Lo ves ahora?** Rigil Kentaurus es una estrella pequeña, con un tamaño y masa similares a las del Sol. El modelo ha identificado que este tipo de valores están en el límite inferior de los datos de entrenamiento, y al ser el único cuerpo en esa región, sus predicciones se convierten en una especie de "punto de referencia" erróneo.
+
+Cuando le dimos al modelo datos del Sistema Solar, donde las masas y radios son mucho menores que los de cualquier estrella en el conjunto original, el modelo no fue capaz de generalizar correctamente. En lugar de extrapolar una nueva relación entre masa, radio y gravedad, se limitó a **"predecir lo que ya conocía"**, es decir, valores similares a los de Rigil Kentaurus. Dicho de otra forma: los modelos machine learning como Random Forest predicen muy bien, pero se limitan a **interpolar**.
+
+Esto nos remite al concepto de las dos culturas del modelado: la estadística clásica, que busca explicaciones causales basadas en modelos matemáticos, y la cultura algorítmica, donde lo primordial es la capacidad predictiva, sin importar tanto la comprensión de las causas.
+
+El truco que empleamos para engañar a fray Domingo es una característica que hay que tener muy en cuenta acerca de los modelos de la cultura algorítmica (ver el post [**Historia de dos culturas: estadística tradicional frente a la revolución algorítmica**](https://dateando.netlify.app/posts/dos_culturas/)**).**
+
+Como, sin saber nada de estas dos culturas, descubrió amargamente fray Domingo, estos modelos, al menos en su forma básica, no nos sirven para entender y explicar las causas, ni, por lo tanto, para poder intervenir de la manera adecuada para lograr nuestros fines, sean científicos o de negocios.
+
+En un artículo venidero analizaremos con más detalle qué le falta a los modelos machine learnig y si es posible subsanar sus carencias.
+
+Sin embargo un modelo de la vieja escuela de los modelos de datos hubiera sido perfecta para los propósitos científicos del dominico. Una simple regresión lineal ajustada con los datos de las estrellas:
+
+```{r}
+g_lm <- lm(log(g_sup_medida) ~ log(masa_kg) + log(radio_m), data = stars_df)
+summary(g_lm)
+
+
+```
+
+predice así con los datos del Sistema Solar:
+
+```{r}
+lm_predictions_sist_solar <- augment(g_lm, newdata = sist_solar_df) %>% 
+  mutate(
+    g_sup_pred = exp(.fitted)
+  )
+
+lm_predictions_sist_solar %>%
+  ggplot(aes(g_sup_medida, g_sup_pred)) +
+  geom_point() +
+  geom_abline() +
+  labs(
+    title = "Predicciones de Gravedad en la Superficie - SISTEMA SOLAR",
+    x = "Gravedad Superficie Medida",
+    y = "Gravedad Superficie Predicha"
+  )
+```
+
+La clave es que:
+
+1.  La regresión lineal maneja una fórmula, perfectamente extrapolable a datos no utilizados al ajustar al modelo.
+
+2.  Permite incorporar conocimiento experto. La fórmula que hemos empleado es:
+
+    $$
+    log(g) = a + \beta_1 \times log(masa) + \beta_2 \times log(radio)
+    $$
+
+    O lo que es lo mismo:
+
+    $$
+    g = a \times \text{masa}^{\alpha_1} \times \text{radio}^{\beta_2}
+    $$ El modelo ha estimado así los coeficientes:
+
+```{r}
+library(broom)
+
+tidy(g_lm, conf.int = TRUE) %>% 
+  # filter(term == '(Intercept)') %>%
+  select(term, estimate, conf.low, conf.high) %>% 
+  mutate(
+    across(
+      c(estimate, conf.low, conf.high), 
+      ~ if_else(term == "(Intercept)", exp(.), .)
+    )
+  )
+```
+
+de manera que la fórmula es, aproximadamente:
+
+$$
+g = 7.2\times10^{-11} \frac{\text{masa}}{\text{radio}^2}
+$$
+
+Es decir, una expresión bastante reconocible ¿verdad?.
+
+La constante aproxima bastante bien el valor de la constante gravitacional $G = 6.674\times{10}^{-11}$, valor que queda dentro de los intervalos de confianza de la tabla de arriba.
+
+Así que la regresión lineal, un humilde modelo de la tradicional cultura de datos, es mucho más apropiado para una tarea científica que un sofisticado modelo de la cultura algorítmica: permite interpolar, explica las causas incorporando conocimietno experto y, además, estima los parámetros de la fórmula explicativa.
+
+------------------------------------------------------------------------
+
+# Epílogo
+
+*Desde que volví de esta misión en Salamanca, he tenido un sueño recurrente. Vuelvo a estar con fray Domingo de Soto en su estudio del convento de San Esteban en Salamanca. El sabio me repite :*
+
+—Explicaos, que no hallo sentido a vuestras palabras. ¿Cómo puede ser que una herramienta que antaño acertó con precisión, yerre ahora de modo tan grotesco?
+
+*Este fue el punto de no retorno. Mi contestación mantuvo el curso de la Historia tal como la conocemos. Pero ¿y si hubiera respondido con la verdad? Mi otro yo, el onírico, siempre lo hace:*
+
+—Veréis, maestro, vuestra confusión es natural. La máquina que os proporcioné no es más que una **inteligencia ciega**, que no conoce leyes ni principios. No razona como vos, ni atiende a la causa de los fenómenos. Simplemente **aprende** de los datos que le alimentáis, como un monje que copia manuscritos sin comprender su contenido.
+
+El dominico alza una ceja, interesado.
+
+—¿Decís, pues, que vuestra máquina no entiende la naturaleza de las cosas, sino que únicamente imita lo que ha visto?
+
+—¡Exacto! —exclamo, aliviado de que empiece a comprender—. Vos habéis alimentado su conocimiento con datos de estrellas, donde la relación entre masa y radio es muy distinta a la de los cuerpos planetarios. La máquina, en su inocencia, ha supuesto que la misma relación se aplicaba a todo lo que le disteis después.
+
+Soto asiente lentamente, sus labios murmurando en latín alguna reflexión.
+
+—Hm… **"Similia similibus comparantur"**, semejantes con semejantes se comparan... Mas si la semejanza es engañosa, yerra el juicio. Decís que vuestro artefacto no comprende la verdadera diferencia entre estrellas y planetas, sino que se limita a interpolar a ciegas.
+
+—Así es, maestro —respondo con admiración ante su sagacidad—. De ahí la importancia de los modelos basados en principios, aquellos que vos mismo habéis intuido con vuestras investigaciones sobre la caída de los cuerpos. Vuestra aproximación, que supone una causa racional, es distinta de la mera búsqueda de patrones que hace la máquina.
+
+El fraile se cruza de brazos, adoptando una pose pensativa.
+
+—Entonces, decís que existen dos caminos para comprender el mundo: el del filósofo, que busca la causa en la razón; y el del mercader, que solo se preocupa de que su cuenta cuadre.
+
+Sonrío ante su metáfora.
+
+—Es una buena forma de verlo. El enfoque clásico, que vos empleáis, formula un modelo del mundo a partir de principios lógicos y lo verifica con los datos. Mientras que el enfoque moderno, el de vuestra "máquina mágica", solo busca la **eficacia predictiva**, sin preocuparse por la verdad subyacente.
+
+Soto da un par de pasos, meditabundo.
+
+—Mas decidme, extranjero, si vuestra máquina no puede entender la razón de las cosas, ¿no es acaso inútil?
+
+—No necesariamente —replico—. Para ciertas tareas, donde la relación es compleja o desconocida, la máquina puede hallar patrones que escapan al ojo humano. Pero, cuando se trata de fenómenos gobernados por leyes bien establecidas, como la gravedad, siempre será más seguro apoyarse en el conocimiento previo, en vez de confiar ciegamente en una caja negra.
+
+—"Caja negra" decís... otro de vuestros barbarismos —se burla Soto, aunque sus ojos reflejan comprensión.
+
+—Sí, maestro, una caja negra, pues oculta su lógica y solo muestra sus resultados, como una cofradía que guarda celosamente sus secretos.
+
+El dominico suelta una carcajada grave.
+
+—Bien dicho, extranjero, bien dicho. Quizás vuestra máquina no sea tan mágica después de todo...
+
+—Tan mágica como vuestros razonamientos, fray Domingo.
+
+Seguimos caminando en silencio por el claustro, mientras la luz declinante tiñe de dorado la piedra de Salamanca. Soto, pensativo, murmura:
+
+—Tal vez, después de todo, no haya más verdad que aquella que se alcanza con la razón.
+
+Me atrevo a responder con humildad:
+
+—O tal vez, maestro, la verdad es una mezcla de razón y observación, de leyes y patrones...

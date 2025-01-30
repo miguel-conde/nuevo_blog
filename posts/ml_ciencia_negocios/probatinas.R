@@ -7,6 +7,7 @@ masa_tierra <- 5.972e24 # kg
 radio_tierra <- 6.371e6 # m
 G <- 6.674e-11 # m^3 kg^-1 s^-2
 
+set.seed(2025)
 
 stars_df <- read_csv("posts/ml_ciencia_negocios/data/estrellas_mas_luminosas.csv") %>% 
   janitor::clean_names() %>% 
@@ -16,7 +17,7 @@ stars_df <- read_csv("posts/ml_ciencia_negocios/data/estrellas_mas_luminosas.csv
   ) %>% 
   mutate(
     g_superficie = G * masa_kg / radio_m^2,
-    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.1)),
+    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.01)),
   )
 
 
@@ -28,7 +29,7 @@ sist_solar_df <- read_csv("posts/ml_ciencia_negocios/data/cuerpos_mas_masivos_si
   ) %>% 
   mutate(
     g_superficie = G * masa_kg / radio_m^2,
-    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.1)),
+    g_sup_medida = g_superficie * (1 + rnorm(n(), 0, 0.01)),
   )
 
 #### Modelo Random Forest con tidymodels usando validación cruzada
