@@ -2,7 +2,7 @@
 title: "El fraile, la máquina y el agente (de datos): un cuento con moraleja sobre datos y modelos"
 subtitle: "O las aventuras de un agente (de datos) en la corte de Carlos V"
 author: "Miguel Conde"
-date: "2025-01-31"
+date: "2025-01-30"
 categories: [statistics, science, machine learning]
 image: "fachada.jpg"
 draft: false

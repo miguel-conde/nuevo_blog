@@ -1,60 +1,109 @@
 ---
-title: "Untitled"
+title: "Más allá de la predicción"
+subtitle: "El aprendizaje automático en la ciencia y los negocios"
 author: "Miguel Conde"
-date: "2025-01-25"
+date: "2025-03-05"
 categories: [statistics, science, machine learning, business]
-image: "image.jpg"
-draft: true
+image: "pexels-pixabay-247819.jpg"
+draft: false
 ---
 
-# **El aprendizaje automático en la ciencia: ¿es realmente suficiente?**
+En 2001, como vimos en [este post](/posts/dos_culturas/index.qmd), el estadístico Leo Breiman habló de **“las dos culturas”** en el análisis de datos:
 
-En el siglo XVII, una manzana –según cuenta la leyenda– cayó del árbol frente a Isaac Newton, y con ello nació la teoría gravitatoria. Pero lo verdaderamente impresionante no fue la manzana, sino la capacidad de Newton para describir el fenómeno con precisión matemática. Su teoría no solo explicaba por qué los objetos caían, sino que además permitía predecir sus movimientos y, lo más importante, intervenir en ellos: construir puentes, enviar cohetes al espacio o ajustar la órbita de satélites con precisión milimétrica.
+1.  **El enfoque basado en modelos**, que busca explicar el mundo a través de teorías matemáticas y relaciones causales.
+
+2.  **El enfoque basado en algoritmos**, que se centra en encontrar patrones predictivos sin preocuparse por entender los mecanismos subyacentes.
+
+Breiman señaló múltiples "carencias" en el enfoque basado en modelos, los modelos estadísticos más tradicionales, en favor de los "nuevos" modelos algorítmicos, que han tenido un éxito incontestable durante los últimos años.
+
+Sin embargo, tampoco son la panacea. Diferentes pesos pesados de la Estadistica respondieron a Breiman iniciando un largo debate. Algunas de las críticas que hicieron a los modelos machine learning las hemos mostrado en la historieta de [este post](/posts/fraile_maquina_agente/fraile_maquina_agente.qmd) y [este otro](/posts/fraile_maquina_agente_2/fraile_maquina_agente_2.qmd).
+
+Fray Domingo no pudo descubrir la Teoría de la Gravedad (por culpa nuestra....) para que, en el siglo XVII, una manzana –según cuenta la leyenda– cayera del árbol frente a Isaac Newton, y con ella naciera - ahora si - la teoría gravitatoria. Pero lo verdaderamente impresionante no fue la manzana, sino la capacidad de Newton para describir el fenómeno con precisión matemática. Su teoría no solo explicaba por qué los objetos caían, sino que además permitía predecir sus movimientos y, lo más importante, intervenir en ellos: construir puentes, enviar cohetes al espacio o ajustar la órbita de satélites con precisión milimétrica. Y su teoría gravitatoria es un modelo... del enfoque basado en modelos.
+
+Este dilema entre ambos enfoques no solo tiene implicaciones en la investigación científica, sino que es **crucial en el mundo empresarial**, donde cada vez más compañías adoptan el aprendizaje automático (ML) para optimizar sus operaciones, asignar presupuestos, personalizar experiencias de usuario y tomar decisiones estratégicas.
 
 Hoy, el aprendizaje automático (ML) nos ofrece herramientas poderosas para la predicción, pero aquí surge una pregunta clave: **¿es suficiente predecir o necesitamos algo más?** Si queremos comprender a fondo los fenómenos y tomar decisiones informadas para intervenir en ellos, confiar únicamente en modelos de ML básicos, que esencialmente **interpolan datos**, no es suficiente.
 
-## **La promesa (y la trampa) del aprendizaje automático**
+Porque aquí radica el problema: si confiamos únicamente en modelos que **interpolan datos sin comprender el negocio**, corremos el riesgo de tomar decisiones equivocadas. **No es suficiente predecir, necesitamos entender para intervenir de manera efectiva.**
 
-El aprendizaje automático ha revolucionado muchas áreas científicas. Desde la predicción del clima hasta la detección temprana de enfermedades, estos modelos pueden identificar patrones complejos en los datos con una precisión impresionante. Sin embargo, **su fortaleza radica en la predicción, no en la comprensión.**
+## El desafío empresarial del aprendizaje automático
 
-Los modelos de ML, en su forma más básica, funcionan como sofisticadas máquinas de interpolación: analizan grandes volúmenes de datos históricos y encuentran relaciones estadísticas para predecir resultados futuros. Pero aquí está el problema: **predicción no es lo mismo que entendimiento.**
+Las empresas han adoptado el aprendizaje automático con entusiasmo, aprovechando su capacidad para detectar patrones en datos históricos. Desde la segmentación de clientes hasta la detección de fraudes o la optimización de inventarios, el ML se ha convertido en una herramienta imprescindible.
 
-En la ciencia, no basta con saber qué sucederá; necesitamos entender **por qué** sucede para poder tomar decisiones, optimizar procesos o cambiar el rumbo de los acontecimientos.
+Sin embargo, **el uso ingenuo de estos modelos puede generar decisiones erróneas**, porque la mayoría de los enfoques actuales se centran en la predicción sin abordar aspectos fundamentales como la causalidad, la incertidumbre y la interpretabilidad.
 
-## **Las limitaciones del aprendizaje automático para la ciencia**
+Por ejemplo:
 
-A diferencia de los modelos científicos tradicionales, que se basan en leyes y principios fundamentales, los modelos de ML no proporcionan una visión clara de los mecanismos subyacentes. Esto plantea desafíos cruciales cuando queremos hacer algo más que predecir; por ejemplo, cuando buscamos intervenir o controlar un fenómeno.
+-   **Marketing:** Un modelo puede predecir qué clientes tienen más probabilidades de comprar, pero ¿qué acciones específicas harán que realmente compren más?
 
-Algunas de las principales limitaciones de los modelos de ML básicos incluyen:
+-   **Recursos humanos:** Predecir qué empleados podrían renunciar es útil, pero ¿cómo podemos intervenir para mejorar la retención?
 
-1.  **Interpolación vs. causalidad:** Los modelos de ML aprenden patrones a partir de los datos disponibles, pero no necesariamente capturan relaciones causales. Si queremos intervenir en un sistema –por ejemplo, diseñar políticas de salud pública o mitigar el cambio climático– necesitamos modelos que expliquen cómo los cambios en una variable afectarán a las demás, no solo correlaciones pasadas.
+-   **Asignación de presupuesto:** Un modelo puede sugerir que invertir más en un canal de ventas aumenta las conversiones, pero ¿es causal o simplemente una correlación espuria?
 
-2.  **Falta de explicabilidad:** Aunque los modelos pueden ofrecer predicciones precisas, a menudo son cajas negras opacas. Sin una interpretación clara, resulta difícil confiar en ellos para tomar decisiones críticas o justificar intervenciones ante expertos y responsables de políticas.
+En todos estos casos, no basta con saber *qué* sucederá, sino que es fundamental entender *por qué* sucede para tomar decisiones efectivas.
 
-3.  **Control limitado:** Sin una comprensión causal, es difícil determinar qué acciones específicas pueden llevarnos a un resultado deseado. ¿Cómo reducir el riesgo de una enfermedad si solo sabemos qué factores están correlacionados, pero no cuáles la causan?
+![](dmytro-bayer-ynGFY68EUug-unsplash.jpg){fig-align="center" width="499"}
 
-4.  **Problemas de generalización:** Los modelos de ML funcionan bien dentro de los datos con los que fueron entrenados, pero pueden fallar al enfrentarse a escenarios nuevos o fuera del rango de los datos originales. La ciencia, por el contrario, busca modelos que puedan generalizar a situaciones desconocidas.
+## Las limitaciones del aprendizaje automático en los negocios[^1]
 
-5.  **Reproducibilidad y robustez:** La capacidad de replicar experimentos es un pilar fundamental de la ciencia. Sin embargo, los modelos de ML dependen de datos específicos y ajustes complejos, lo que puede dificultar la reproducibilidad de sus resultados.
+[^1]: En este apartado seguimos el libro [**Supervised Machine Learning for Science**](https://ml-science-book.com/), de Christoph Molnar & Timo Freiesleben.
 
-## **Más allá de la predicción: hacia una integración más robusta**
+Para que el aprendizaje automático realmente agregue valor en el entorno empresarial, es necesario ir más allá de la predicción y adoptar un enfoque más sólido que contemple:
 
-Para que el aprendizaje automático se convierta en una herramienta verdaderamente científica, debe ir más allá de la predicción e incorporar elementos que permitan la **comprensión profunda** y la **intervención efectiva.** Algunas estrategias para lograrlo incluyen:
+**1. Más allá de la correlación: Causalidad**
 
--   **Modelos híbridos:** Combinar ML con modelos basados en principios físicos o teóricos para obtener predicciones más interpretables y accionables.
+El objetivo de cualquier empresa no es simplemente predecir el comportamiento del cliente, sino **influir en él.** Para lograrlo, necesitamos modelos que puedan responder preguntas del tipo "¿qué pasaría si...?" en lugar de limitarse a correlaciones históricas. Técnicas como los experimentos A/B, los modelos causales estructurales y el aprendizaje automático doble pueden ayudar a identificar relaciones causales.
 
--   **Causalidad:** Explorar enfoques como la inferencia causal para comprender las relaciones de causa y efecto, más allá de simples correlaciones.
+**2. Interpretar para confiar**
 
--   **Interpretabilidad:** Incorporar técnicas como SHAP o LIME para abrir la caja negra del ML y entender el impacto de cada variable en los resultados.
+En un entorno corporativo, los responsables de la toma de decisiones necesitan entender por qué un modelo sugiere una acción específica. La falta de **interpretabilidad** puede generar desconfianza, resistencia a la adopción o decisiones basadas en suposiciones incorrectas. Técnicas como SHAP o LIME permiten abrir la caja negra de los modelos y comprender qué factores están impulsando las decisiones.
 
--   **Cuantificación de la incertidumbre:** No basta con obtener una predicción; es crucial saber cuán confiables son los resultados para tomar decisiones informadas.
+**3. Generalización: adaptarse a un entorno cambiante**
 
--   **Conocimiento del dominio:** Integrar el conocimiento experto de cada campo para guiar la construcción y validación de modelos.
+El mercado es dinámico y los datos cambian constantemente. Un modelo que funciona bien hoy puede fallar mañana si las condiciones cambian. Es crucial garantizar que los modelos de ML sean robustos y puedan **generalizarse** a nuevos escenarios, considerando cambios en las distribuciones de datos y tendencias emergentes.
 
-## **Reflexión final**
+**4. Gestionar la Incertidumbre para tomar decisiones informadas**
 
-El aprendizaje automático es una herramienta poderosa, pero no es un sustituto del método científico tradicional. La verdadera ciencia no solo predice, sino que explica, permite el control y genera conocimiento aplicable.
+Toda predicción conlleva un margen de error. En los negocios, cuantificar la **incertidumbre** es esencial para la gestión de riesgos y la planificación estratégica. Adoptar enfoques bayesianos o frecuentistas permite proporcionar intervalos de confianza que ayuden a tomar decisiones más informadas.
 
-Si nos conformamos con modelos de ML que solo interpolan datos pasados, corremos el riesgo de construir soluciones que parecen funcionar a corto plazo, pero que carecen de la profundidad necesaria para abordar los desafíos complejos de la ciencia.
+**5. Conocimiento del dominio: aprovechar la experiencia humana**
 
-Así como Newton no se limitó a observar la caída de la manzana, sino que formuló leyes que nos permiten intervenir en el mundo, nuestra meta como científicos de datos debe ser ir más allá de la predicción y buscar una comprensión más profunda. Solo entonces podremos aprovechar todo el potencial del aprendizaje automático en la ciencia.
+Un modelo puede ser excelente desde el punto de vista técnico, pero si no considera la experiencia de los expertos en la empresa, puede ofrecer recomendaciones poco prácticas o erróneas. La integración del **conocimiento del dominio** en los modelos de ML es fundamental para garantizar su aplicabilidad en entornos empresariales reales.
+
+**6. Reproducibilidad para asegurar la coherencia en las decisiones**
+
+Para que el aprendizaje automático sea una herramienta confiable en la empresa, sus resultados deben ser **reproducibles**. La documentación clara, la gestión de datos adecuada y las prácticas de experimentación bien definidas garantizan que las decisiones tomadas con modelos de ML puedan ser justificadas y auditadas en el futuro.
+
+## Integrar las dos culturas en la empresa ¿es posible?
+
+En el ámbito empresarial, al igual que en la ciencia, es necesario encontrar un equilibrio entre la **cultura de los modelos** (explicabilidad, causalidad, comprensión) y la **cultura de los algoritmos** (eficiencia, precisión, escalabilidad).
+
+Las empresas que logran integrar ambos enfoques pueden:
+
+-   **Tomar decisiones más inteligentes y fundamentadas**, basadas en comprensión y no solo en correlaciones.
+
+-   **Diseñar estrategias efectivas**, sabiendo qué acciones generan el impacto deseado.
+
+-   **Reducir riesgos**, al tener en cuenta la incertidumbre y la robustez de los modelos.
+
+-   **Fomentar la confianza en el ML**, asegurando interpretabilidad y transparencia en las decisiones automatizadas.
+
+## Para meditar: el camino por delante
+
+El aprendizaje automático tiene el potencial de transformar la toma de decisiones en las empresas, pero para ello, debemos superar la obsesión por la predicción y adoptar un enfoque más profundo que permita comprender los sistemas y actuar sobre ellos de manera efectiva.
+
+**¿Predicción o comprensión?** Esa es la pregunta clave que deben hacerse las empresas que dependen del ML para su crecimiento. Porque sin una comprensión real, las decisiones basadas en datos pueden ser tan erróneas como aquellas tomadas sin datos en absoluto.
+
+La integración de la causalidad, la interpretabilidad y la incertidumbre no solo es una cuestión científica, sino también una necesidad empresarial. Solo así podemos garantizar que el aprendizaje automático no solo nos diga lo que podría pasar, sino que nos ayude a decidir qué hacer para mejorar el futuro.
+
+![](ai-generated-8620394_1280.jpg){fig-align="center" width="600"}
+
+## Y ¿qué pasa con la IA?
+
+Si el aprendizaje automático nos ha llevado a este debate entre predicción y comprensión, la inteligencia artificial generativa (IAG) introduce una capa adicional de complejidad. Mientras que los modelos tradicionales de ML buscan patrones en datos estructurados para hacer predicciones, los modelos generativos, como GPT o los diffusion models, ¿crean contenido nuevo a partir de patrones aprendidos gracias a algún fenómeno de "emergencia"[^2]? ¿O se limitan a generar "las secuencias más probables", en una versión más sofisticada de la interpolación de datos?
+
+[^2]: La **emergencia** o el **surgimiento** hace referencia a aquellas propiedades o procesos de un sistema no reducibles a las propiedades o procesos de sus partes constituyentes ([Wikipedia](https://es.wikipedia.org/wiki/Emergencia_(filosof%C3%ADa))). Se denominan **emergentes** las nuevas propiedades que surgen asociadas al aumento de complejidad. \[...\] una propiedad de un sistema complejo es emergente cuando no es predecible de, ni reducible a las características o propiedades de sus componentes más simples. Esa definición no cuestiona que las propiedades emergentes sean consecuencia de las propiedades y relaciones que caracterizan a esos sistemas más básicos; lo son, pero no se pueden predecir de las anteriores ni reducir a las mismas ([Reduccionismo vs. emergencia (II): las propiedades emergentes](Reduccionismo vs. emergencia (II): las propiedades emergentes)**)**.
+
+Aquí se repite el mismo dilema, igual o aumentado (si concedemos que la IAG es capaz de crear). Así como los modelos de ML pueden hacer predicciones precisas sin comprender causas subyacentes, la IA generativa puede producir textos, imágenes o código impresionantes sin una verdadera comprensión del significado o contexto. Su capacidad para interpolar datos y replicar patrones es innegable, pero, al igual que en los negocios, ¿es suficiente con eso?
+
+Tomemos el ejemplo del uso de IA generativa en la toma de decisiones empresariales. Un modelo puede redactar informes financieros, generar recomendaciones estratégicas o hasta diseñar campañas de marketing personalizadas. Sin embargo, si no entendemos cómo y por qué llegó a esas conclusiones, ¿podemos confiar plenamente en ellas? De la misma manera que, por ejemplo, el ML sin causalidad puede llevarnos a decisiones erróneas, la IA generativa sin las capacidades descritas arriba puede ser un arma de doble filo.

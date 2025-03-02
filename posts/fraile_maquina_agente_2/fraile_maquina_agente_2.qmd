@@ -12,7 +12,7 @@ image: "copernican_system.webp"
 draft: false
 ---
 
-En el [post anterior](/posts/fraile_maquina_agente/fraile_maquina_agente.qmd) os conté cómo logramos confundir al pobre fray [Domingo de Soto](https://es.wikipedia.org/wiki/Domingo_de_Soto) para que no se adelantara a Newton en sus descubrimientos y la Historia, tal como la conocemos, cambiara para siempre. Hoy os voy a contar cómo lo hicimos.
+En el [post anterior](/posts/fraile_maquina_agente/fraile_maquina_agente.qmd) (**si no lo has hecho, ¡léelo antes de continuar con este!**) os conté cómo logramos confundir al pobre fray [Domingo de Soto](https://es.wikipedia.org/wiki/Domingo_de_Soto) para que no se adelantara a Newton en sus descubrimientos y la Historia, tal como la conocemos, cambiara para siempre. Hoy os voy a contar cómo lo hicimos.
 
 Ya sabéis que soy un funcionario del Ministerio del Tiempo. Nuestra misión es esa, mantener la Historia inalterada. Lo que aun no sabeis es que en el Ministerio tenemos una Dirección General de Ciencia y Tecnología y, dentro de ella, una Sección de Ciencia de Datos, a la que pertenezco.
 
@@ -209,7 +209,9 @@ Esto nos remite al concepto de las dos culturas del modelado: la estadística cl
 
 El truco que empleamos para engañar a fray Domingo es una característica que hay que tener muy en cuenta acerca de los modelos de la cultura algorítmica (ver el post [**Historia de dos culturas: estadística tradicional frente a la revolución algorítmica**](https://dateando.netlify.app/posts/dos_culturas/)**).**
 
-Como, sin saber nada de estas dos culturas, descubrió amargamente fray Domingo, estos modelos, al menos en su forma básica, no nos sirven para entender y explicar las causas, ni, por lo tanto, para poder intervenir de la manera adecuada para lograr nuestros fines, sean científicos o de negocios.
+Como descubrió amargamente fray Domingo, estos modelos, al menos en su forma básica, no nos sirven para entender y explicar las causas, ni, por lo tanto, para poder intervenir de la manera adecuada para lograr nuestros fines, sean científicos o de negocios.
+
+Aunque le convencí de lo contrario, añadir datos no solucionaría nada: añadir variables (columnas en el dataset de entrenamiento del modelo) es absoltamente inútil; y añadir filas (nuevas observaciones) nunca nos asegurará que cubrimos todos los casos posibles.
 
 En un artículo venidero analizaremos con más detalle qué le falta a los modelos machine learnig y si es posible subsanar sus carencias.
 
