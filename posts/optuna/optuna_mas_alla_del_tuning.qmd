@@ -1,0 +1,199 @@
+---
+title: "Optuna más allá del tuning"
+subtitle: "Por qué optimizar no es lo mismo que automatizar el criterio"
+author: "Flavia Otero Sanz"
+date: "2026-03-16"
+lang: es
+bibliography: references.bib
+categories: [data science, optimization]
+image: Figure-12.jpg
+nocite: |
+  @*
+draft: false
+---
+
+Hay una escena que se repite bastante en equipos de datos. Alguien enseña un notebook, lanza un `study.optimize(...)`, aparecen unas cuantas curvas prometedoras y, casi sin decirlo, la sala da por resuelto el asunto: perfecto, ya tenemos una forma más elegante de hacer *tuning*.
+
+Justo ahí empieza también el malentendido.
+
+Porque si Optuna fuera solo eso, una forma más cómoda de buscar el mejor `learning_rate` o la profundidad de un árbol, sería útil, sí, pero no especialmente interesante. Sería una pieza más del zoo habitual de utilidades para machine learning. Un destornillador razonable. Una mejora ergonómica. Poco más.
+
+Lo potente aparece cuando uno deja de pensar en Optuna como un atajo para afinar modelos y empieza a verlo como lo que realmente es: una manera práctica de formular y recorrer problemas de optimización en contextos donde evaluar una decisión cuesta dinero, tiempo, computación y, a menudo, credibilidad [@akiba2019optuna].
+
+Ahí cambia todo.
+
+## El problema nunca fue probar combinaciones
+
+Durante muchos años, buena parte del discurso alrededor del ajuste de modelos se movió entre dos caricaturas. Por un lado, la búsqueda en rejilla, tranquila, exhaustiva en apariencia, perfectamente ordenada. Por otro, la búsqueda aleatoria, que durante bastante tiempo sonó a solución perezosa, casi irreverente. ¿Cómo iba a ser serio tirar configuraciones al azar?
+
+Lo curioso es que esa irreverencia tenía bastante más ciencia de la que parecía. El trabajo clásico de Bergstra y Bengio mostró que, en muchos problemas reales, la búsqueda aleatoria era una referencia mucho más fuerte de lo que la intuición de sobremesa sugería [@bergstra2012random]. La razón es bastante elegante: cuando solo unos pocos hiperparámetros importan de verdad, una rejilla gasta demasiados intentos explorando con obsesión dimensiones poco relevantes.
+
+Piénsalo un momento. Si solo tienes presupuesto para cien evaluaciones, el problema central no es si tu librería te deja lanzar esas cien pruebas con sintaxis bonita. El problema real es cómo gastar ese presupuesto sin comportarte como si el espacio de búsqueda fuera uniforme, benigno y dócil. No lo es. Casi nunca lo es.
+
+Y aquí conviene hacer una distinción importante. Optimizar no significa recorrer combinaciones. Optimizar significa tomar decisiones secuenciales bajo incertidumbre. Significa usar lo aprendido en ensayos anteriores para decidir qué merece la pena evaluar después. Significa, en otras palabras, tratar el presupuesto experimental como un recurso escaso.
+
+Eso ya no suena a mero *tuning*. Suena a otra cosa.
+
+## Optuna es útil porque convierte una idea estadística en una gramática de trabajo
+
+Buena parte del interés contemporáneo por la optimización secuencial viene del paraguas de la optimización bayesiana. La familia es amplia, los matices importan, y no conviene meterlo todo en el mismo saco. Pero hay una intuición básica que merece la pena conservar: si evaluar es caro, no quieres escoger el siguiente punto como si no supieras nada de los anteriores.
+
+Optuna aterriza esa intuición en una interfaz muy poco aparatosa. Esa es una de sus mayores virtudes. No exige que el usuario piense en el problema en términos de un formalismo grandilocuente. Le deja describir un experimento con una función objetivo, un conjunto de decisiones posibles y una política de exploración que se va refinando con los resultados [@akiba2019optuna].
+
+El detalle decisivo, para mi gusto, está en el estilo *define-by-run*. No defines primero un gran artefacto abstracto y luego lo ejecutas. Defines el espacio mientras recorres la lógica del experimento. Eso permite expresar condicionalidad, jerarquías y decisiones que dependen de otras decisiones con mucha naturalidad. Y eso, que parece una comodidad de API, en realidad tiene implicaciones epistemológicas bastante serias: el espacio de búsqueda deja de ser una tabla estática y pasa a ser una traducción operativa de tus hipótesis.
+
+Dicho de otro modo: Optuna no solo prueba cosas. Te obliga a declarar qué cosas consideras plausibles.
+
+## El ejemplo pequeño donde se ve el truco
+
+Veamos un ejemplo mínimo, no porque vaya a cambiar el mundo, sino porque ilustra bien dónde está la sustancia.
+
+```{python}
+import optuna
+
+from sklearn.datasets import load_breast_cancer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+
+X, y = load_breast_cancer(return_X_y=True)
+
+
+def objective(trial):
+    model_name = trial.suggest_categorical("model", ["svc", "random_forest"])
+
+    if model_name == "svc":
+        c_value = trial.suggest_float("svc_c", 1e-3, 1e2, log=True)
+        gamma = trial.suggest_float("svc_gamma", 1e-4, 1e-1, log=True)
+
+        model = Pipeline(
+            [
+                ("scaler", StandardScaler()),
+                ("clf", SVC(C=c_value, gamma=gamma)),
+            ]
+        )
+    else:
+        n_estimators = trial.suggest_int("rf_n_estimators", 100, 500)
+        max_depth = trial.suggest_int("rf_max_depth", 2, 20)
+        min_samples_leaf = trial.suggest_int("rf_min_samples_leaf", 1, 10)
+
+        model = RandomForestClassifier(
+            n_estimators=n_estimators,
+            max_depth=max_depth,
+            min_samples_leaf=min_samples_leaf,
+            random_state=42,
+            n_jobs=-1,
+        )
+
+    return cross_val_score(model, X, y, cv=5, scoring="roc_auc").mean()
+
+
+study = optuna.create_study(direction="maximize")
+study.optimize(objective, n_trials=100)
+
+print(study.best_trial.params)
+print(study.best_value)
+```
+
+Esto, leído deprisa, parece un ejemplo de comparación entre modelos con ajuste de hiperparámetros. Y lo es. Pero solo en la superficie.
+
+Lo que de verdad está pasando es esto:
+
+1.  Estamos diciendo que hay dos familias de modelos plausibles.
+2.  Estamos diciendo que cada familia tiene una geometría distinta de decisiones.
+3.  Estamos diciendo que la métrica relevante aquí es `roc_auc`, no precisión bruta ni exactitud cómoda.
+4.  Estamos diciendo que aceptamos una estimación basada en validación cruzada, con el coste computacional que eso implica.
+5.  Estamos diciendo, en suma, qué entendemos por un buen resultado.
+
+Eso último es lo importante. El algoritmo de optimización ayuda a navegar el espacio, pero no decide qué espacio merece la pena navegar ni qué noción de calidad debe gobernar la búsqueda.
+
+Ahí está la frontera que a veces se olvida: la automatización acelera la exploración; no sustituye el juicio.
+
+## El espacio de búsqueda no es un detalle técnico
+
+Una de las cosas más engañosas de estas herramientas es que, como la API es amable, uno puede empezar a pensar que la dificultad principal estaba en aprender cuatro métodos: `suggest_float`, `suggest_int`, `suggest_categorical` y poco más. Pero el problema serio no está ahí. El problema serio está en diseñar un espacio de búsqueda que no sea absurdo.
+
+Si abres un rango gigantesco para el `learning_rate`, si dejas profundidades incompatibles con tu régimen de datos, si mezclas modelos que exigen preprocesados distintos sin pensarlo bien, o si introduces condicionalidad sin una hipótesis clara, la optimización no se vuelve más inteligente por el simple hecho de ejecutarse con Optuna. Lo único que consigues es automatizar una mala formulación.
+
+Esto no es una crítica a la herramienta. Más bien al contrario. Una buena herramienta deja al descubierto la calidad del planteamiento. Y Optuna, en ese sentido, es implacable. Si el objetivo es ruidoso, si hay fuga de información, si la métrica no representa la decisión de negocio, si la evaluación no es reproducible, tarde o temprano el estudio te devolverá una versión sofisticada de tus propios errores.
+
+Una versión rápida. Una versión bien registrada. Pero tus errores, al fin y al cabo.
+
+## Optimizar no es delegar el criterio
+
+Aquí es donde me parece útil unir dos ideas que a menudo se discuten por separado.
+
+La primera es que Optuna es mucho más que una librería para hiperparámetros. La segunda es que optimizar no equivale a externalizar el criterio técnico. Juntas forman una tesis más interesante: precisamente porque Optuna es una herramienta general de optimización, obliga a tomarse en serio el acto de formular bien el problema.
+
+Imagina tres equipos distintos.
+
+El primero quiere maximizar una métrica de validación y no se pregunta demasiado por la estabilidad del resultado. El segundo introduce poda temprana, almacenamiento persistente, semillas, validación más cuidadosa y un espacio de búsqueda razonable. El tercero, además, discute si la métrica objetivo es la correcta, si hay restricciones operativas, si el coste de inferencia importa y si el mejor punto encontrado será estable cuando cambie el contexto.
+
+Los tres usan Optuna. Pero no están haciendo el mismo tipo de trabajo.
+
+El primero está ejecutando una librería.
+
+El segundo está montando un experimento.
+
+El tercero está haciendo optimización en serio.
+
+Puede parecer una diferencia retórica, pero no lo es. Cuando Optuna entra en flujos más reales, lo que empiezan a importar son cosas bastante menos glamurosas que el sampler de moda: persistencia de estudios, reanudación de ejecuciones, comparación entre ensayos, trazabilidad de resultados, presupuestos de cómputo, restricciones, objetivos múltiples, poda temprana, diagnósticos visuales, capacidad de explicar por qué una configuración se considera mejor que otra. Todo eso forma parte del trabajo. Todo eso forma parte del problema [@akiba2019optuna].
+
+## Hay una pedagogía escondida en la API
+
+Una razón por la que Optuna ha tenido tanto recorrido práctico es que su diseño enseña sin subrayarlo demasiado. `Study`, `Trial`, `Sampler`, `Pruner`, `Storage`: esos nombres no son casuales. Organizan la conversación mental correcta.
+
+Un `trial` no es una verdad. Es una prueba.
+
+Un `study` no es un modelo. Es un proceso.
+
+Un `sampler` no sabe lo que es un buen sistema. Solo propone candidatos bajo cierta lógica estadística.
+
+Un `pruner` no demuestra que una configuración sea mala. Solo decide, con evidencia parcial, que seguir invirtiendo recursos en ella probablemente no compensa.
+
+Lo interesante es que, al trabajar con estas abstracciones, uno empieza a ver la optimización menos como una foto final y más como una secuencia de decisiones falibles. Ese cambio mental importa mucho. Importa en ciencia de datos. Importa en machine learning. Importa, incluso, en contextos no estrictamente predictivos, donde el objetivo puede ser calibrar una simulación, ajustar un algoritmo o buscar compromisos entre varios criterios [@bergstra2011tpe].
+
+## También conviene decir cuándo no hace falta
+
+La fascinación por las herramientas modernas produce un efecto secundario bastante previsible: empezamos a usarlas también cuando no hacen falta.
+
+Si tienes tres hiperparámetros, una evaluación baratísima y un problema muy bien entendido, quizá no necesitas una estrategia adaptativa sofisticada. Quizá con una exploración manual razonable o una búsqueda aleatoria bien pensada basta. No hay ninguna deshonra en eso. De hecho, tener un buen punto de comparación simple suele ser una señal de madurez experimental, no de atraso.
+
+La propia literatura sobre optimización de hiperparámetros debería habernos vacunado un poco contra el fetichismo metodológico. La búsqueda aleatoria ya fue, en su momento, un recordatorio útil de que muchas intuiciones cómodas sobre exhaustividad y eficiencia eran falsas [@bergstra2012random]. TPE vino después a ofrecer una estrategia secuencial más afinada para espacios complejos y jerárquicos [@bergstra2011tpe]. Optuna recoge buena parte de esa tradición y la pone al alcance de un flujo de trabajo cotidiano [@akiba2019optuna]. Pero ninguna de esas capas elimina la obligación de pensar.
+
+Y casi mejor que sea así.
+
+## Lo que cambia cuando dejamos de hablar solo de tuning
+
+En el momento en que abandonas la lectura estrecha de Optuna como simple ajustador de modelos, empiezan a aparecer preguntas más fértiles.
+
+¿Qué parte del rendimiento viene del algoritmo y qué parte de la formulación del problema?
+
+¿Estamos optimizando una métrica intermedia o una consecuencia que de verdad importa?
+
+¿Queremos el mejor valor observado o una región robusta del espacio?
+
+¿Tiene sentido gastar más presupuesto en exprimir décimas, o la incertidumbre del proceso vuelve esa precisión ilusoria?
+
+¿Debemos buscar un único óptimo, o un conjunto de compromisos aceptables?
+
+Fíjate en la diferencia. Ya no estamos preguntando cómo lanzar más trials. Estamos preguntando qué significa realmente haber optimizado algo.
+
+Esa es, para mí, la conversación valiosa.
+
+## Cierre
+
+Reducir Optuna a una librería de *tuning* es comprensible. También es quedarse corto.
+
+Lo verdaderamente interesante no es que nos permita automatizar búsquedas, sino que nos obliga a explicitar supuestos, presupuestos, métricas, restricciones y formas de evidencia. Nos da una maquinaria muy competente para explorar espacios complejos, sí, pero al mismo tiempo nos devuelve una verdad menos cómoda: la calidad del resultado depende tanto del algoritmo como de la inteligencia con la que planteamos el problema.
+
+Dicho de forma más seca: Optuna no automatiza el criterio. Lo pone a trabajar.
+
+Y quizá por eso merece atención más allá del entusiasmo instrumental. Porque en un momento en el que muchas herramientas prometen pensar por nosotros, Optuna resulta valioso por una razón bastante más sobria: ayuda a pensar mejor cuándo merece la pena buscar, qué merece la pena buscar y cómo saber si lo que hemos encontrado vale algo de verdad.
+
+## Referencias {.unnumbered}
+
+::: {#refs}
+:::
